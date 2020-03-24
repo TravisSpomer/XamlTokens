@@ -12,7 +12,6 @@
 			<!-- Design tokens here! -->
 			<CornerRadius x:Key="CornerRadius">4</CornerRadius>
 			<Thickness x:Key="ButtonPadding">25</Thickness>
-			<!-- wrong -->
 			<Thickness x:Key="ButtonBorderThemeThickness">1</Thickness>
 			<x:String x:Key="ContentControlThemeFontFamily">Calibri</x:String>
 			<x:Double x:Key="ContentControlThemeFontWeight">700</x:Double>
