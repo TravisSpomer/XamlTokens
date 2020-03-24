@@ -44,7 +44,7 @@
 	</Page.Resources>
 
 	<Grid>
-		<Button Margin="60,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Default without design tokens" />
+		<Button Margin="60,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Button with crappy tokens" />
 	</Grid>
 
 </Page>
