@@ -1,0 +1,12 @@
+﻿<Page
+	x:Class="XamlTokens.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:XamlTokens"
+	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+		<Button Margin="60,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Default without design tokens" />
+	</Grid>
+
+</Page>
