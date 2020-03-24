@@ -44,6 +44,11 @@
 
 	<Grid>
 		<Button Margin="60,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Button with crappy tokens" />
+		<!-- See Button_themeresources.xaml for the tokens used by AccentButtonStyle. -->
+		<Button Margin="60,160,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="TODO: Accent button" Style="{StaticResource AccentButtonStyle}" />
+		<!-- The platform doesn't define an outline or transparent button style, so we'll have to create those ourselves. -->
+		<Button Margin="60,260,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="TODO: Outline button" IsEnabled="False" />
+		<Button Margin="60,360,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="TODO: Transparent button" IsEnabled="False" />
 	</Grid>
 
 </Page>
