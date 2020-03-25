@@ -16,7 +16,6 @@
 			<x:Double x:Key="ControlContentThemeFontSize">24</x:Double>
 
 			<!-- Neutral style design tokens-->
-			<!-- How to find the names of brushes: https://github.com/microsoft/microsoft-ui-xaml/blob/master/dev/CommonStyles/Button_themeresources.xaml -->
 			<SolidColorBrush x:Key="ButtonForeground">Yellow</SolidColorBrush>
 			<SolidColorBrush x:Key="ButtonBackground">Red</SolidColorBrush>
 			<SolidColorBrush x:Key="ButtonBorderBrush">Yellow</SolidColorBrush>
@@ -43,10 +42,41 @@
 			<SolidColorBrush x:Key="AccentButtonForegroundDisabled">Gray</SolidColorBrush>
 			<SolidColorBrush x:Key="AccentButtonBackgroundDisabled">Silver</SolidColorBrush>
 			<SolidColorBrush x:Key="AccentButtonBorderBrushDisabled">Gray</SolidColorBrush>
+
+			<!-- Outline style design tokens -->
+			<SolidColorBrush x:Key="OutlineButtonForeground">Black</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBackground">Transparent</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBorderBrush">Gray</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonForegroundPointerOver">Magenta</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBackgroundPointerOver">#22000000</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBorderBrushPointerOver">Magenta</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonForegroundPressed">Lime</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBackgroundPressed">Green</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBorderBrushPressed">Lime</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonForegroundDisabled">Gray</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBackgroundDisabled">#11000000</SolidColorBrush>
+			<SolidColorBrush x:Key="OutlineButtonBorderBrushDisabled">Gray</SolidColorBrush>
+
+			<!-- Transparent style design tokens -->
+			<SolidColorBrush x:Key="TransparentButtonForeground">Black</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBackground">Transparent</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBorderBrush">Transparent</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonForegroundPointerOver">Magenta</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBackgroundPointerOver">#22000000</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBorderBrushPointerOver">Transparent</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonForegroundPressed">Lime</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBackgroundPressed">Green</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBorderBrushPressed">Transparent</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonForegroundDisabled">Gray</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBackgroundDisabled">Transparent</SolidColorBrush>
+			<SolidColorBrush x:Key="TransparentButtonBorderBrushDisabled">Transparent</SolidColorBrush>
 			
 			<!--
 				Most properties on Button come from design tokens already, but a few don't (or are done so in a way that can't be overridden),
 				so make them work here.
+			
+				How to find the names of standard brushes:
+				https://github.com/microsoft/microsoft-ui-xaml/blob/master/dev/CommonStyles/Button_themeresources.xaml
 			-->
 			<Style TargetType="Button">
 				<Setter Property="BackgroundSizing" Value="InnerBorderEdge" />
@@ -61,23 +91,9 @@
 				<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
 				<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
 			</Style>
-
-			<!-- Outline style design tokens -->
-
-			<SolidColorBrush x:Key="OutlineButtonForeground">Black</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackground">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrush">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonForegroundPointerOver">Magenta</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackgroundPointerOver">#22000000</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrushPointerOver">Magenta</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonForegroundPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackgroundPressed">Green</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrushPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonForegroundDisabled">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackgroundDisabled">#11000000</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrushDisabled">Gray</SolidColorBrush>
 			
-			<!-- The platform doesn't include an outline button style, so create one. -->
+			<!-- The platform doesn't include outline and transparent button styles, so create one. -->
+			<!-- TODO: RevealButtonStyle, using the same color values as OutlineButtonStyle but with RevealBrush instead of SolidColorBrush.-->
 
 			<Style x:Key="OutlineButtonStyle" TargetType="Button">
 				<Setter Property="Background" Value="{ThemeResource OutlineButtonBackground}" />
@@ -166,23 +182,6 @@
 					</Setter.Value>
 				</Setter>
 			</Style>
-
-			<!-- Transparent style design tokens -->
-
-			<SolidColorBrush x:Key="TransparentButtonForeground">Black</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackground">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrush">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonForegroundPointerOver">Magenta</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackgroundPointerOver">#22000000</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrushPointerOver">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonForegroundPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackgroundPressed">Green</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrushPressed">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonForegroundDisabled">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackgroundDisabled">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrushDisabled">Transparent</SolidColorBrush>
-
-			<!-- The platform doesn't include a transparent button style, so create one. -->
 
 			<Style x:Key="TransparentButtonStyle" TargetType="Button">
 				<Setter Property="Background" Value="{ThemeResource TransparentButtonBackground}" />
