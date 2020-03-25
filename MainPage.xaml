@@ -277,7 +277,7 @@
 		</ResourceDictionary>
 	</Page.Resources>
 
-	<ScrollViewer ZoomMode="Disabled">
+	<ScrollViewer ZoomMode="Disabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
 		<Grid Margin="60" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnSpacing="20" RowSpacing="20" Height="404" Width="406">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
