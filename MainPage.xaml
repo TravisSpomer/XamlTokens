@@ -15,7 +15,32 @@
 				<ResourceDictionary Source="/FluentUITokens.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 			
-			<winuimedia:AcrylicBrush x:Key="ApplicationPageBackgroundThemeBrush" BackgroundSource="HostBackdrop" TintColor="White" FallbackColor="White" TintLuminosityOpacity="0.7" />
+			<winuimedia:AcrylicBrush x:Key="CustomAcrylicBackdropBrush" BackgroundSource="HostBackdrop" TintColor="White" FallbackColor="White" TintLuminosityOpacity="0.7" />
+
+			<Style TargetType="TextBlock">
+				<Setter Property="FontFamily" Value="{ThemeResource AliasFontBodyFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource AliasFontBodyWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource AliasFontBodySize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource AliasFontBodyLineHeight}" />
+				<Setter Property="TextWrapping" Value="WrapWholeWords" />
+				<Setter Property="Margin" Value="0, 8, 0, 8" />
+			</Style>
+
+			<Style x:Key="HeaderTextBlockStyle" TargetType="TextBlock">
+				<Setter Property="FontFamily" Value="{ThemeResource AliasFontHeaderFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource AliasFontHeaderWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource AliasFontHeaderSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource AliasFontHeaderLineHeight}" />
+				<Setter Property="Margin" Value="0, 16, 0, 16" />
+			</Style>
+
+			<Style x:Key="SubheaderTextBlockStyle" TargetType="TextBlock">
+				<Setter Property="FontFamily" Value="{ThemeResource AliasFontSubheaderFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource AliasFontSubheaderWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource AliasFontSubheaderSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource AliasFontSubheaderLineHeight}" />
+				<Setter Property="Margin" Value="0, 12, 0, 12" />
+			</Style>
 			
 			<!-- Alias the existing WinUI design tokens on the new FluentUI design tokens -->
 			<StaticResource x:Key="CornerRadius" ResourceKey="AliasControlNeutralButtonBorderRadius" />
@@ -24,7 +49,7 @@
 			<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AliasControlNeutralButtonFontFamily" />
 			<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="AliasControlNeutralButtonFontWeight" />
 			<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="AliasControlNeutralButtonFontSize" />
-			<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="AliasControlNeutralButtonFontLineHeight" /><!-- TODO: use this value -->
+			<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="AliasControlNeutralButtonFontLineHeight" />
 
 			<!-- Neutral style design tokens-->
 			<StaticResource x:Key="ButtonForeground" ResourceKey="AliasControlNeutralButtonColorForegroundRest" />
@@ -94,6 +119,7 @@
 				<Setter Property="CornerRadius" Value="{ThemeResource CornerRadius}" />
 				<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
 				<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+				<!-- There's no way to override LineHeight without overriding Template, so we'd have to do that. Not important for now though. -->
 			</Style>
 
 			<Style x:Key="AccentButtonStyle" TargetType="Button" BasedOn="{StaticResource AccentButtonStyle}">
@@ -101,6 +127,7 @@
 				<Setter Property="CornerRadius" Value="{ThemeResource CornerRadius}" />
 				<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
 				<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+				<!-- There's no way to override LineHeight without overriding Template, so we'd have to do that. Not important for now though. -->
 			</Style>
 
 			<!-- The platform doesn't include outline and transparent button styles, so create one. -->
@@ -135,6 +162,7 @@
 								ContentTransitions="{TemplateBinding ContentTransitions}"
 								CornerRadius="{TemplateBinding CornerRadius}"
 								Padding="{TemplateBinding Padding}"
+								LineHeight="{ThemeResource ControlContentThemeFontLineHeight}"
 								HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
 								VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
 								AutomationProperties.AccessibilityView="Raw">
@@ -223,6 +251,7 @@
 								ContentTransitions="{TemplateBinding ContentTransitions}"
 								CornerRadius="{TemplateBinding CornerRadius}"
 								Padding="{TemplateBinding Padding}"
+								LineHeight="{ThemeResource ControlContentThemeFontLineHeight}"
 								HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
 								VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
 								AutomationProperties.AccessibilityView="Raw">
@@ -285,27 +314,41 @@
 		</ResourceDictionary>
 	</Page.Resources>
 
-	<ScrollViewer ZoomMode="Disabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-		<Grid Margin="60" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnSpacing="20" RowSpacing="20" Height="404" Width="406">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition />
-				<ColumnDefinition />
-			</Grid.ColumnDefinitions>
-			<Grid.RowDefinitions>
-				<RowDefinition />
-				<RowDefinition />
-				<RowDefinition />
-				<RowDefinition />
-			</Grid.RowDefinitions>
-			<Button Grid.Row="0" Content="Neutral" />
-			<Button Grid.Row="1" Content="Accent" Style="{StaticResource AccentButtonStyle}" />
-			<Button Grid.Row="2" Content="Outline" Style="{StaticResource OutlineButtonStyle}" />
-			<Button Grid.Row="3" Content="Transparent" Style="{StaticResource TransparentButtonStyle}" />
-			<Button Grid.Column="1" Grid.Row="0" Content="Neutral" IsEnabled="False" />
-			<Button Grid.Column="1" Grid.Row="1" Content="Accent" Style="{StaticResource AccentButtonStyle}" IsEnabled="False" />
-			<Button Grid.Column="1" Grid.Row="2" Content="Outline" Style="{StaticResource OutlineButtonStyle}" IsEnabled="False" />
-			<Button Grid.Column="1" Grid.Row="3" Content="Transparent" Style="{StaticResource TransparentButtonStyle}" IsEnabled="False" />
-		</Grid>
+	<ScrollViewer ZoomMode="Disabled" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
+		<StackPanel Orientation="Vertical" Margin="40">
+			<TextBlock Style="{StaticResource HeaderTextBlockStyle}">Design tokens playground</TextBlock>
+			<Grid Margin="15" Padding="30" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnSpacing="20" RowSpacing="15" BorderThickness="{ThemeResource GlobalBorderBaseWidth}" BorderBrush="{ThemeResource GlobalColorGray100}" CornerRadius="{ThemeResource GlobalBorderBaseRadius}" Background="{ThemeResource CustomAcrylicBackdropBrush}">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition />
+					<RowDefinition />
+					<RowDefinition />
+				</Grid.RowDefinitions>
+				<Button Grid.Row="0" Content="Neutral" />
+				<Button Grid.Row="1" Content="Accent" Style="{StaticResource AccentButtonStyle}" />
+				<Button Grid.Row="2" Content="Outline" Style="{StaticResource OutlineButtonStyle}" />
+				<Button Grid.Row="3" Content="Transparent" Style="{StaticResource TransparentButtonStyle}" />
+				<Button Grid.Column="1" Grid.Row="0" Content="Neutral" IsEnabled="False" />
+				<Button Grid.Column="1" Grid.Row="1" Content="Accent" Style="{StaticResource AccentButtonStyle}" IsEnabled="False" />
+				<Button Grid.Column="1" Grid.Row="2" Content="Outline" Style="{StaticResource OutlineButtonStyle}" IsEnabled="False" />
+				<Button Grid.Column="1" Grid.Row="3" Content="Transparent" Style="{StaticResource TransparentButtonStyle}" IsEnabled="False" />
+			</Grid>
+			<TextBlock Style="{StaticResource SubheaderTextBlockStyle}">How to edit</TextBlock>
+			<TextBlock>
+				The accent button's background color is <Run FontFamily="Consolas">AliasControlAccentButtonColorBackgroundRest</Run>, which is built into <Run FontFamily="Consolas">FluentUITokens.xaml</Run>.
+			</TextBlock>
+			<TextBlock>
+				To change it, open
+				<Run FontFamily="Consolas">/style-dictionary/properties/alias/control.js</Run> in the prototype repo.
+			</TextBlock>
+			<TextBlock>
+				After building the code in the prototype repo, copy <Run FontFamily="Consolas">FluentUITokens.xaml</Run> to this repo and rebuild.
+			</TextBlock>
+		</StackPanel>
 	</ScrollViewer>
 
 </Page>
