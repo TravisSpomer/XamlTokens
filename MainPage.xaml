@@ -15,71 +15,72 @@
 				<ResourceDictionary Source="/FluentUITokens.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 			
-			<winuimedia:AcrylicBrush x:Key="ApplicationPageBackgroundThemeBrush" BackgroundSource="HostBackdrop" TintColor="White" FallbackColor="White" TintLuminosityOpacity="0.5" />
+			<winuimedia:AcrylicBrush x:Key="ApplicationPageBackgroundThemeBrush" BackgroundSource="HostBackdrop" TintColor="White" FallbackColor="White" TintLuminosityOpacity="0.7" />
 			
-			<!-- Shared design tokens -->
-			<CornerRadius x:Key="CornerRadius">4</CornerRadius>
-			<Thickness x:Key="ButtonPadding">25</Thickness>
-			<Thickness x:Key="ButtonBorderThemeThickness">1</Thickness>
-			<x:String x:Key="ContentControlThemeFontFamily">Fake font to show fallback, Comic Sans MS, Calibri</x:String>
-			<x:Double x:Key="ContentControlThemeFontWeight">700</x:Double>
-			<x:Double x:Key="ControlContentThemeFontSize">24</x:Double>
+			<!-- Alias the existing WinUI design tokens on the new FluentUI design tokens -->
+			<StaticResource x:Key="CornerRadius" ResourceKey="AliasControlNeutralButtonBorderRadius" />
+			<StaticResource x:Key="ButtonPadding" ResourceKey="AliasControlNeutralButtonPadding" />
+			<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="AliasControlNeutralButtonBorderWidth" />
+			<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AliasControlNeutralButtonFontFamily" />
+			<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="AliasControlNeutralButtonFontWeight" />
+			<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="AliasControlNeutralButtonFontSize" />
+			<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="AliasControlNeutralButtonFontLineHeight" /><!-- TODO: use this value -->
 
 			<!-- Neutral style design tokens-->
-			<SolidColorBrush x:Key="ButtonForeground">Yellow</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBackground">Red</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBorderBrush">Yellow</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonForegroundPointerOver">Cyan</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBackgroundPointerOver">Blue</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBorderBrushPointerOver">Cyan</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonForegroundPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBackgroundPressed">Green</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBorderBrushPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonForegroundDisabled">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBackgroundDisabled">Silver</SolidColorBrush>
-			<SolidColorBrush x:Key="ButtonBorderBrushDisabled">Gray</SolidColorBrush>
+			<StaticResource x:Key="ButtonForeground" ResourceKey="AliasControlNeutralButtonColorForegroundRest" />
+			<StaticResource x:Key="ButtonBackground" ResourceKey="AliasControlNeutralButtonColorBackgroundRest" />
+			<StaticResource x:Key="ButtonBorderBrush" ResourceKey="AliasControlNeutralButtonColorBorderRest" />
+			<StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="AliasControlNeutralButtonColorForegroundHover" />
+			<StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="AliasControlNeutralButtonColorBackgroundHover" />
+			<StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="AliasControlNeutralButtonColorBorderHover" />
+			<StaticResource x:Key="ButtonForegroundPressed" ResourceKey="AliasControlNeutralButtonColorForegroundPressed" />
+			<StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="AliasControlNeutralButtonColorBackgroundPressed" />
+			<StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="AliasControlNeutralButtonColorBorderPressed" />
+			<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="AliasControlNeutralButtonColorForegroundDisabled" />
+			<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="AliasControlNeutralButtonColorBackgroundDisabled" />
+			<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="AliasControlNeutralButtonColorBorderDisabled" />
 
 			<!-- Accent style design tokens -->
-			<SolidColorBrush x:Key="AccentButtonForeground">Cyan</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBackground">Blue</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBorderBrush">Cyan</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonForegroundPointerOver">Yellow</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBackgroundPointerOver">Red</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBorderBrushPointerOver">Yellow</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonForegroundPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBackgroundPressed">Green</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBorderBrushPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonForegroundDisabled">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBackgroundDisabled">Silver</SolidColorBrush>
-			<SolidColorBrush x:Key="AccentButtonBorderBrushDisabled">Gray</SolidColorBrush>
+			<StaticResource x:Key="AccentButtonForeground" ResourceKey="AliasControlAccentButtonColorForegroundRest" />
+			<StaticResource x:Key="AccentButtonBackground" ResourceKey="AliasControlAccentButtonColorBackgroundRest" />
+			<StaticResource x:Key="AccentButtonBorderBrush" ResourceKey="AliasControlAccentButtonColorBorderRest" />
+			<StaticResource x:Key="AccentButtonForegroundPointerOver" ResourceKey="AliasControlAccentButtonColorForegroundHover" />
+			<StaticResource x:Key="AccentButtonBackgroundPointerOver" ResourceKey="AliasControlAccentButtonColorBackgroundHover" />
+			<StaticResource x:Key="AccentButtonBorderBrushPointerOver" ResourceKey="AliasControlAccentButtonColorBorderHover" />
+			<StaticResource x:Key="AccentButtonForegroundPressed" ResourceKey="AliasControlAccentButtonColorForegroundPressed" />
+			<StaticResource x:Key="AccentButtonBackgroundPressed" ResourceKey="AliasControlAccentButtonColorBackgroundPressed" />
+			<StaticResource x:Key="AccentButtonBorderBrushPressed" ResourceKey="AliasControlAccentButtonColorBorderPressed" />
+			<StaticResource x:Key="AccentButtonForegroundDisabled" ResourceKey="AliasControlAccentButtonColorForegroundDisabled" />
+			<StaticResource x:Key="AccentButtonBackgroundDisabled" ResourceKey="AliasControlAccentButtonColorBackgroundDisabled" />
+			<StaticResource x:Key="AccentButtonBorderBrushDisabled" ResourceKey="AliasControlAccentButtonColorBorderDisabled" />
 
 			<!-- Outline style design tokens -->
-			<SolidColorBrush x:Key="OutlineButtonForeground">Black</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackground">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrush">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonForegroundPointerOver">Magenta</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackgroundPointerOver">#22000000</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrushPointerOver">Magenta</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonForegroundPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackgroundPressed">Green</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrushPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonForegroundDisabled">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBackgroundDisabled">#11000000</SolidColorBrush>
-			<SolidColorBrush x:Key="OutlineButtonBorderBrushDisabled">Gray</SolidColorBrush>
+			<StaticResource x:Key="OutlineButtonForeground" ResourceKey="AliasControlOutlineButtonColorForegroundRest" />
+			<StaticResource x:Key="OutlineButtonBackground" ResourceKey="AliasControlOutlineButtonColorBackgroundRest" />
+			<StaticResource x:Key="OutlineButtonBorderBrush" ResourceKey="AliasControlOutlineButtonColorBorderRest" />
+			<StaticResource x:Key="OutlineButtonForegroundPointerOver" ResourceKey="AliasControlOutlineButtonColorForegroundHover" />
+			<StaticResource x:Key="OutlineButtonBackgroundPointerOver" ResourceKey="AliasControlOutlineButtonColorBackgroundHover" />
+			<StaticResource x:Key="OutlineButtonBorderBrushPointerOver" ResourceKey="AliasControlOutlineButtonColorBorderHover" />
+			<StaticResource x:Key="OutlineButtonForegroundPressed" ResourceKey="AliasControlOutlineButtonColorForegroundPressed" />
+			<StaticResource x:Key="OutlineButtonBackgroundPressed" ResourceKey="AliasControlOutlineButtonColorBackgroundPressed" />
+			<StaticResource x:Key="OutlineButtonBorderBrushPressed" ResourceKey="AliasControlOutlineButtonColorBorderPressed" />
+			<StaticResource x:Key="OutlineButtonForegroundDisabled" ResourceKey="AliasControlOutlineButtonColorForegroundDisabled" />
+			<StaticResource x:Key="OutlineButtonBackgroundDisabled" ResourceKey="AliasControlOutlineButtonColorBackgroundDisabled" />
+			<StaticResource x:Key="OutlineButtonBorderBrushDisabled" ResourceKey="AliasControlOutlineButtonColorBorderDisabled" />
 
 			<!-- Transparent style design tokens -->
-			<SolidColorBrush x:Key="TransparentButtonForeground">Black</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackground">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrush">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonForegroundPointerOver">Magenta</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackgroundPointerOver">#22000000</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrushPointerOver">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonForegroundPressed">Lime</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackgroundPressed">Green</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrushPressed">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonForegroundDisabled">Gray</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBackgroundDisabled">Transparent</SolidColorBrush>
-			<SolidColorBrush x:Key="TransparentButtonBorderBrushDisabled">Transparent</SolidColorBrush>
+			<StaticResource x:Key="TransparentButtonForeground" ResourceKey="AliasControlTransparentButtonColorForegroundRest" />
+			<StaticResource x:Key="TransparentButtonBackground" ResourceKey="AliasControlTransparentButtonColorBackgroundRest" />
+			<StaticResource x:Key="TransparentButtonBorderBrush" ResourceKey="AliasControlTransparentButtonColorBorderRest" />
+			<StaticResource x:Key="TransparentButtonForegroundPointerOver" ResourceKey="AliasControlTransparentButtonColorForegroundHover" />
+			<StaticResource x:Key="TransparentButtonBackgroundPointerOver" ResourceKey="AliasControlTransparentButtonColorBackgroundHover" />
+			<StaticResource x:Key="TransparentButtonBorderBrushPointerOver" ResourceKey="AliasControlTransparentButtonColorBorderHover" />
+			<StaticResource x:Key="TransparentButtonForegroundPressed" ResourceKey="AliasControlTransparentButtonColorForegroundPressed" />
+			<StaticResource x:Key="TransparentButtonBackgroundPressed" ResourceKey="AliasControlTransparentButtonColorBackgroundPressed" />
+			<StaticResource x:Key="TransparentButtonBorderBrushPressed" ResourceKey="AliasControlTransparentButtonColorBorderPressed" />
+			<StaticResource x:Key="TransparentButtonForegroundDisabled" ResourceKey="AliasControlTransparentButtonColorForegroundDisabled" />
+			<StaticResource x:Key="TransparentButtonBackgroundDisabled" ResourceKey="AliasControlTransparentButtonColorBackgroundDisabled" />
+			<StaticResource x:Key="TransparentButtonBorderBrushDisabled" ResourceKey="AliasControlTransparentButtonColorBorderDisabled" />
 
 			<!--
 				Most properties on Button come from design tokens already, but a few don't (or are done so in a way that can't be overridden),
