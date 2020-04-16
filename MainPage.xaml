@@ -15,94 +15,94 @@
 			</ResourceDictionary.MergedDictionaries>
 			
 			<Style TargetType="TextBlock">
-				<Setter Property="FontFamily" Value="{ThemeResource AliasFontBodyFamily}" />
-				<Setter Property="FontWeight" Value="{ThemeResource AliasFontBodyWeight}" />
-				<Setter Property="FontSize" Value="{ThemeResource AliasFontBodySize}" />
-				<Setter Property="LineHeight" Value="{ThemeResource AliasFontBodyLineHeight}" />
+				<Setter Property="FontFamily" Value="{ThemeResource SetBodyFontFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource SetBodyFontWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource SetBodyFontSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource SetBodyFontLineHeight}" />
 				<Setter Property="TextWrapping" Value="WrapWholeWords" />
 				<Setter Property="Margin" Value="0, 8, 0, 8" />
 			</Style>
 
 			<Style x:Key="HeaderTextBlockStyle" TargetType="TextBlock">
-				<Setter Property="FontFamily" Value="{ThemeResource AliasFontHeaderFamily}" />
-				<Setter Property="FontWeight" Value="{ThemeResource AliasFontHeaderWeight}" />
-				<Setter Property="FontSize" Value="{ThemeResource AliasFontHeaderSize}" />
-				<Setter Property="LineHeight" Value="{ThemeResource AliasFontHeaderLineHeight}" />
+				<Setter Property="FontFamily" Value="{ThemeResource SetHeaderFontFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource SetHeaderFontWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource SetHeaderFontSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource SetHeaderFontLineHeight}" />
 				<Setter Property="Margin" Value="0, 16, 0, 16" />
 			</Style>
 
 			<Style x:Key="SubheaderTextBlockStyle" TargetType="TextBlock">
-				<Setter Property="FontFamily" Value="{ThemeResource AliasFontSubheaderFamily}" />
-				<Setter Property="FontWeight" Value="{ThemeResource AliasFontSubheaderWeight}" />
-				<Setter Property="FontSize" Value="{ThemeResource AliasFontSubheaderSize}" />
-				<Setter Property="LineHeight" Value="{ThemeResource AliasFontSubheaderLineHeight}" />
+				<Setter Property="FontFamily" Value="{ThemeResource SetSubheaderFontFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource SetSubheaderFontWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource SetSubheaderFontSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource SetSubheaderFontLineHeight}" />
 				<Setter Property="Margin" Value="0, 12, 0, 12" />
 			</Style>
 			
 			<!-- Alias the existing WinUI design tokens on the new FluentUI design tokens -->
-			<StaticResource x:Key="CornerRadius" ResourceKey="AliasControlNeutralButtonBorderRadius" />
-			<StaticResource x:Key="ButtonPadding" ResourceKey="AliasControlNeutralButtonPadding" />
-			<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="AliasControlNeutralButtonBorderWidth" />
-			<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AliasControlNeutralButtonFontFamily" />
-			<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="AliasControlNeutralButtonFontWeight" />
-			<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="AliasControlNeutralButtonFontSize" />
-			<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="AliasControlNeutralButtonFontLineHeight" />
+			<StaticResource x:Key="CornerRadius" ResourceKey="ButtonRootCornerRadius" />
+			<StaticResource x:Key="ButtonPadding" ResourceKey="ButtonRootLayoutPadding" />
+			<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="ButtonRootStrokeWidth" />
+			<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AccentButtonTextFontFamily" />
+			<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="AccentButtonTextFontWeight" />
+			<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="AccentButtonTextFontSize" />
+			<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="AccentButtonTextFontLineHeight" />
 
 			<!-- Neutral style design tokens-->
-			<StaticResource x:Key="ButtonForeground" ResourceKey="AliasControlNeutralButtonColorForegroundRest" />
-			<StaticResource x:Key="ButtonBackground" ResourceKey="AliasControlNeutralButtonColorBackgroundRest" />
-			<StaticResource x:Key="ButtonBorderBrush" ResourceKey="AliasControlNeutralButtonColorBorderRest" />
-			<StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="AliasControlNeutralButtonColorForegroundHover" />
-			<StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="AliasControlNeutralButtonColorBackgroundHover" />
-			<StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="AliasControlNeutralButtonColorBorderHover" />
-			<StaticResource x:Key="ButtonForegroundPressed" ResourceKey="AliasControlNeutralButtonColorForegroundPressed" />
-			<StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="AliasControlNeutralButtonColorBackgroundPressed" />
-			<StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="AliasControlNeutralButtonColorBorderPressed" />
-			<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="AliasControlNeutralButtonColorForegroundDisabled" />
-			<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="AliasControlNeutralButtonColorBackgroundDisabled" />
-			<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="AliasControlNeutralButtonColorBorderDisabled" />
+			<StaticResource x:Key="ButtonForeground" ResourceKey="ButtonTextFillColorRest" />
+			<StaticResource x:Key="ButtonBackground" ResourceKey="ButtonRootFillColorRest" />
+			<StaticResource x:Key="ButtonBorderBrush" ResourceKey="ButtonRootStrokeColorRest" />
+			<StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="ButtonTextFillColorHover" />
+			<StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="ButtonRootFillColorHover" />
+			<StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="ButtonRootStrokeColorHover" />
+			<StaticResource x:Key="ButtonForegroundPress" ResourceKey="ButtonTextFillColorPress" />
+			<StaticResource x:Key="ButtonBackgroundPress" ResourceKey="ButtonRootFillColorPress" />
+			<StaticResource x:Key="ButtonBorderBrushPress" ResourceKey="ButtonRootStrokeColorPress" />
+			<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="ButtonTextFillColorDisabled" />
+			<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="ButtonRootFillColorDisabled" />
+			<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="ButtonRootStrokeColorDisabled" />
 
 			<!-- Accent style design tokens -->
-			<StaticResource x:Key="AccentButtonForeground" ResourceKey="AliasControlAccentButtonColorForegroundRest" />
-			<StaticResource x:Key="AccentButtonBackground" ResourceKey="AliasControlAccentButtonColorBackgroundRest" />
-			<StaticResource x:Key="AccentButtonBorderBrush" ResourceKey="AliasControlAccentButtonColorBorderRest" />
-			<StaticResource x:Key="AccentButtonForegroundPointerOver" ResourceKey="AliasControlAccentButtonColorForegroundHover" />
-			<StaticResource x:Key="AccentButtonBackgroundPointerOver" ResourceKey="AliasControlAccentButtonColorBackgroundHover" />
-			<StaticResource x:Key="AccentButtonBorderBrushPointerOver" ResourceKey="AliasControlAccentButtonColorBorderHover" />
-			<StaticResource x:Key="AccentButtonForegroundPressed" ResourceKey="AliasControlAccentButtonColorForegroundPressed" />
-			<StaticResource x:Key="AccentButtonBackgroundPressed" ResourceKey="AliasControlAccentButtonColorBackgroundPressed" />
-			<StaticResource x:Key="AccentButtonBorderBrushPressed" ResourceKey="AliasControlAccentButtonColorBorderPressed" />
-			<StaticResource x:Key="AccentButtonForegroundDisabled" ResourceKey="AliasControlAccentButtonColorForegroundDisabled" />
-			<StaticResource x:Key="AccentButtonBackgroundDisabled" ResourceKey="AliasControlAccentButtonColorBackgroundDisabled" />
-			<StaticResource x:Key="AccentButtonBorderBrushDisabled" ResourceKey="AliasControlAccentButtonColorBorderDisabled" />
+			<StaticResource x:Key="AccentButtonForeground" ResourceKey="AccentButtonTextFillColorRest" />
+			<StaticResource x:Key="AccentButtonBackground" ResourceKey="AccentButtonRootFillColorRest" />
+			<StaticResource x:Key="AccentButtonBorderBrush" ResourceKey="AccentButtonRootStrokeColorRest" />
+			<StaticResource x:Key="AccentButtonForegroundPointerOver" ResourceKey="AccentButtonTextFillColorHover" />
+			<StaticResource x:Key="AccentButtonBackgroundPointerOver" ResourceKey="AccentButtonRootFillColorHover" />
+			<StaticResource x:Key="AccentButtonBorderBrushPointerOver" ResourceKey="AccentButtonRootStrokeColorHover" />
+			<StaticResource x:Key="AccentButtonForegroundPress" ResourceKey="AccentButtonTextFillColorPress" />
+			<StaticResource x:Key="AccentButtonBackgroundPress" ResourceKey="AccentButtonRootFillColorPress" />
+			<StaticResource x:Key="AccentButtonBorderBrushPress" ResourceKey="AccentButtonRootStrokeColorPress" />
+			<StaticResource x:Key="AccentButtonForegroundDisabled" ResourceKey="AccentButtonTextFillColorDisabled" />
+			<StaticResource x:Key="AccentButtonBackgroundDisabled" ResourceKey="AccentButtonRootFillColorDisabled" />
+			<StaticResource x:Key="AccentButtonBorderBrushDisabled" ResourceKey="AccentButtonRootStrokeColorDisabled" />
 
 			<!-- Outline style design tokens -->
-			<StaticResource x:Key="OutlineButtonForeground" ResourceKey="AliasControlOutlineButtonColorForegroundRest" />
-			<StaticResource x:Key="OutlineButtonBackground" ResourceKey="AliasControlOutlineButtonColorBackgroundRest" />
-			<StaticResource x:Key="OutlineButtonBorderBrush" ResourceKey="AliasControlOutlineButtonColorBorderRest" />
-			<StaticResource x:Key="OutlineButtonForegroundPointerOver" ResourceKey="AliasControlOutlineButtonColorForegroundHover" />
-			<StaticResource x:Key="OutlineButtonBackgroundPointerOver" ResourceKey="AliasControlOutlineButtonColorBackgroundHover" />
-			<StaticResource x:Key="OutlineButtonBorderBrushPointerOver" ResourceKey="AliasControlOutlineButtonColorBorderHover" />
-			<StaticResource x:Key="OutlineButtonForegroundPressed" ResourceKey="AliasControlOutlineButtonColorForegroundPressed" />
-			<StaticResource x:Key="OutlineButtonBackgroundPressed" ResourceKey="AliasControlOutlineButtonColorBackgroundPressed" />
-			<StaticResource x:Key="OutlineButtonBorderBrushPressed" ResourceKey="AliasControlOutlineButtonColorBorderPressed" />
-			<StaticResource x:Key="OutlineButtonForegroundDisabled" ResourceKey="AliasControlOutlineButtonColorForegroundDisabled" />
-			<StaticResource x:Key="OutlineButtonBackgroundDisabled" ResourceKey="AliasControlOutlineButtonColorBackgroundDisabled" />
-			<StaticResource x:Key="OutlineButtonBorderBrushDisabled" ResourceKey="AliasControlOutlineButtonColorBorderDisabled" />
+			<StaticResource x:Key="OutlineButtonForeground" ResourceKey="OutlineButtonTextFillColorRest" />
+			<StaticResource x:Key="OutlineButtonBackground" ResourceKey="OutlineButtonRootFillColorRest" />
+			<StaticResource x:Key="OutlineButtonBorderBrush" ResourceKey="OutlineButtonRootStrokeColorRest" />
+			<StaticResource x:Key="OutlineButtonForegroundPointerOver" ResourceKey="OutlineButtonTextFillColorHover" />
+			<StaticResource x:Key="OutlineButtonBackgroundPointerOver" ResourceKey="OutlineButtonRootFillColorHover" />
+			<StaticResource x:Key="OutlineButtonBorderBrushPointerOver" ResourceKey="OutlineButtonRootStrokeColorHover" />
+			<StaticResource x:Key="OutlineButtonForegroundPressed" ResourceKey="OutlineButtonTextFillColorPress" />
+			<StaticResource x:Key="OutlineButtonBackgroundPressed" ResourceKey="OutlineButtonRootFillColorPress" />
+			<StaticResource x:Key="OutlineButtonBorderBrushPressed" ResourceKey="OutlineButtonRootStrokeColorPress" />
+			<StaticResource x:Key="OutlineButtonForegroundDisabled" ResourceKey="OutlineButtonTextFillColorDisabled" />
+			<StaticResource x:Key="OutlineButtonBackgroundDisabled" ResourceKey="OutlineButtonRootFillColorDisabled" />
+			<StaticResource x:Key="OutlineButtonBorderBrushDisabled" ResourceKey="OutlineButtonRootStrokeColorDisabled" />
 
 			<!-- Transparent style design tokens -->
-			<StaticResource x:Key="TransparentButtonForeground" ResourceKey="AliasControlTransparentButtonColorForegroundRest" />
-			<StaticResource x:Key="TransparentButtonBackground" ResourceKey="AliasControlTransparentButtonColorBackgroundRest" />
-			<StaticResource x:Key="TransparentButtonBorderBrush" ResourceKey="AliasControlTransparentButtonColorBorderRest" />
-			<StaticResource x:Key="TransparentButtonForegroundPointerOver" ResourceKey="AliasControlTransparentButtonColorForegroundHover" />
-			<StaticResource x:Key="TransparentButtonBackgroundPointerOver" ResourceKey="AliasControlTransparentButtonColorBackgroundHover" />
-			<StaticResource x:Key="TransparentButtonBorderBrushPointerOver" ResourceKey="AliasControlTransparentButtonColorBorderHover" />
-			<StaticResource x:Key="TransparentButtonForegroundPressed" ResourceKey="AliasControlTransparentButtonColorForegroundPressed" />
-			<StaticResource x:Key="TransparentButtonBackgroundPressed" ResourceKey="AliasControlTransparentButtonColorBackgroundPressed" />
-			<StaticResource x:Key="TransparentButtonBorderBrushPressed" ResourceKey="AliasControlTransparentButtonColorBorderPressed" />
-			<StaticResource x:Key="TransparentButtonForegroundDisabled" ResourceKey="AliasControlTransparentButtonColorForegroundDisabled" />
-			<StaticResource x:Key="TransparentButtonBackgroundDisabled" ResourceKey="AliasControlTransparentButtonColorBackgroundDisabled" />
-			<StaticResource x:Key="TransparentButtonBorderBrushDisabled" ResourceKey="AliasControlTransparentButtonColorBorderDisabled" />
+			<StaticResource x:Key="TransparentButtonForeground" ResourceKey="TransparentButtonTextFillColorRest" />
+			<StaticResource x:Key="TransparentButtonBackground" ResourceKey="TransparentButtonRootFillColorRest" />
+			<StaticResource x:Key="TransparentButtonBorderBrush" ResourceKey="TransparentButtonRootStrokeColorRest" />
+			<StaticResource x:Key="TransparentButtonForegroundPointerOver" ResourceKey="TransparentButtonTextFillColorHover" />
+			<StaticResource x:Key="TransparentButtonBackgroundPointerOver" ResourceKey="TransparentButtonRootFillColorHover" />
+			<StaticResource x:Key="TransparentButtonBorderBrushPointerOver" ResourceKey="TransparentButtonRootStrokeColorHover" />
+			<StaticResource x:Key="TransparentButtonForegroundPressed" ResourceKey="TransparentButtonTextFillColorPress" />
+			<StaticResource x:Key="TransparentButtonBackgroundPressed" ResourceKey="TransparentButtonRootFillColorPress" />
+			<StaticResource x:Key="TransparentButtonBorderBrushPressed" ResourceKey="TransparentButtonRootStrokeColorPress" />
+			<StaticResource x:Key="TransparentButtonForegroundDisabled" ResourceKey="TransparentButtonTextFillColorDisabled" />
+			<StaticResource x:Key="TransparentButtonBackgroundDisabled" ResourceKey="TransparentButtonRootFillColorDisabled" />
+			<StaticResource x:Key="TransparentButtonBorderBrushDisabled" ResourceKey="TransparentButtonRootStrokeColorDisabled" />
 
 			<!--
 				Most properties on Button come from design tokens already, but a few don't (or are done so in a way that can't be overridden),
@@ -314,7 +314,7 @@
 	<ScrollViewer ZoomMode="Disabled" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
 		<StackPanel Orientation="Vertical" Margin="40">
 			<TextBlock Style="{StaticResource HeaderTextBlockStyle}">Design tokens playground</TextBlock>
-			<Grid Margin="15" Padding="30" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnSpacing="20" RowSpacing="15" BorderThickness="{ThemeResource GlobalBorderBaseWidth}" BorderBrush="{ThemeResource GlobalColorGray100}" CornerRadius="{ThemeResource GlobalBorderBaseRadius}">
+			<Grid Margin="15" Padding="30" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnSpacing="20" RowSpacing="15" BorderThickness="{ThemeResource GlobalStrokeWidth100}" BorderBrush="{ThemeResource GlobalColorGray100}" CornerRadius="{ThemeResource GlobalCornerRadius100}">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition />
 					<ColumnDefinition />
@@ -336,11 +336,11 @@
 			</Grid>
 			<TextBlock Style="{StaticResource SubheaderTextBlockStyle}">How to edit</TextBlock>
 			<TextBlock>
-				The accent button's background color is <Run FontFamily="Consolas">AliasControlAccentButtonColorBackgroundRest</Run>, which is built into <Run FontFamily="Consolas">FluentUITokens.xaml</Run>.
+				The accent button's background color is <Run FontFamily="Consolas">AccentButtonRootFillColorRest</Run>, which is built into <Run FontFamily="Consolas">FluentUITokens.xaml</Run>.
 			</TextBlock>
 			<TextBlock>
 				To change it, open
-				<Run FontFamily="Consolas">/style-dictionary/properties/alias/control.js</Run> in the prototype repo.
+				<Run FontFamily="Consolas">/style-dictionary/tokens/fluentui.js</Run> in the prototype repo.
 			</TextBlock>
 			<TextBlock>
 				After building the code in the prototype repo, copy <Run FontFamily="Consolas">FluentUITokens.xaml</Run> to this repo and rebuild.
