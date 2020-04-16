@@ -15,27 +15,27 @@
 			</ResourceDictionary.MergedDictionaries>
 			
 			<Style TargetType="TextBlock">
-				<Setter Property="FontFamily" Value="{ThemeResource SetBodyFontFamily}" />
-				<Setter Property="FontWeight" Value="{ThemeResource SetBodyFontWeight}" />
-				<Setter Property="FontSize" Value="{ThemeResource SetBodyFontSize}" />
-				<Setter Property="LineHeight" Value="{ThemeResource SetBodyFontLineHeight}" />
+				<Setter Property="FontFamily" Value="{ThemeResource BodyFontFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource BodyFontWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource BodyFontSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource BodyFontLineHeight}" />
 				<Setter Property="TextWrapping" Value="WrapWholeWords" />
 				<Setter Property="Margin" Value="0, 8, 0, 8" />
 			</Style>
 
 			<Style x:Key="HeaderTextBlockStyle" TargetType="TextBlock">
-				<Setter Property="FontFamily" Value="{ThemeResource SetHeaderFontFamily}" />
-				<Setter Property="FontWeight" Value="{ThemeResource SetHeaderFontWeight}" />
-				<Setter Property="FontSize" Value="{ThemeResource SetHeaderFontSize}" />
-				<Setter Property="LineHeight" Value="{ThemeResource SetHeaderFontLineHeight}" />
+				<Setter Property="FontFamily" Value="{ThemeResource HeaderFontFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource HeaderFontWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource HeaderFontSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource HeaderFontLineHeight}" />
 				<Setter Property="Margin" Value="0, 16, 0, 16" />
 			</Style>
 
 			<Style x:Key="SubheaderTextBlockStyle" TargetType="TextBlock">
-				<Setter Property="FontFamily" Value="{ThemeResource SetSubheaderFontFamily}" />
-				<Setter Property="FontWeight" Value="{ThemeResource SetSubheaderFontWeight}" />
-				<Setter Property="FontSize" Value="{ThemeResource SetSubheaderFontSize}" />
-				<Setter Property="LineHeight" Value="{ThemeResource SetSubheaderFontLineHeight}" />
+				<Setter Property="FontFamily" Value="{ThemeResource SubheaderFontFamily}" />
+				<Setter Property="FontWeight" Value="{ThemeResource SubheaderFontWeight}" />
+				<Setter Property="FontSize" Value="{ThemeResource SubheaderFontSize}" />
+				<Setter Property="LineHeight" Value="{ThemeResource SubheaderFontLineHeight}" />
 				<Setter Property="Margin" Value="0, 12, 0, 12" />
 			</Style>
 			
