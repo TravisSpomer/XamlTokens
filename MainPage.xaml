@@ -340,7 +340,7 @@
 			</TextBlock>
 			<TextBlock>
 				To change it, open
-				<Run FontFamily="Consolas">/style-dictionary/tokens/fluentui.json</Run> in the prototype repo.
+				<Run FontFamily="Consolas">/src/tokens/fluentui.json</Run> in the prototype repo.
 			</TextBlock>
 			<TextBlock>
 				After building the code in the prototype repo, copy <Run FontFamily="Consolas">FluentUITokens.xaml</Run> to this repo and rebuild.
