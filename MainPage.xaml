@@ -5,44 +5,45 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	mc:Ignorable="d"
-	d:DesignWidth="600" d:DesignHeight="550"
+	d:DesignWidth="960" d:DesignHeight="550"
 	Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-	<ScrollViewer ZoomMode="Disabled" HorizontalScrollMode="Disabled" VerticalScrollMode="Auto">
-		<StackPanel Orientation="Vertical" Margin="40">
-			<TextBlock Style="{StaticResource HeaderTextBlockStyle}">Design tokens playground</TextBlock>
-			<Grid Margin="15" Padding="30" HorizontalAlignment="Left" VerticalAlignment="Top" ColumnSpacing="20" RowSpacing="15" BorderThickness="{ThemeResource GlobalStrokeWidth100}" BorderBrush="{ThemeResource GlobalColorGray100}" CornerRadius="{ThemeResource GlobalCornerRadius100}">
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition />
-					<ColumnDefinition />
-				</Grid.ColumnDefinitions>
-				<Grid.RowDefinitions>
-					<RowDefinition />
-					<RowDefinition />
-					<RowDefinition />
-					<RowDefinition />
-				</Grid.RowDefinitions>
-				<Button Grid.Row="0" Content="Neutral" />
-				<Button Grid.Row="1" Content="Accent" Style="{StaticResource AccentButtonStyle}" />
-				<Button Grid.Row="2" Content="Outline" Style="{StaticResource OutlineButtonStyle}" />
-				<Button Grid.Row="3" Content="Transparent" Style="{StaticResource TransparentButtonStyle}" />
-				<Button Grid.Column="1" Grid.Row="0" Content="Neutral" IsEnabled="False" />
-				<Button Grid.Column="1" Grid.Row="1" Content="Accent" Style="{StaticResource AccentButtonStyle}" IsEnabled="False" />
-				<Button Grid.Column="1" Grid.Row="2" Content="Outline" Style="{StaticResource OutlineButtonStyle}" IsEnabled="False" />
-				<Button Grid.Column="1" Grid.Row="3" Content="Transparent" Style="{StaticResource TransparentButtonStyle}" IsEnabled="False" />
-			</Grid>
-			<TextBlock Style="{StaticResource SubheaderTextBlockStyle}">How to edit</TextBlock>
-			<TextBlock>
-				The accent button's background color is <Run FontFamily="Consolas">AccentButtonRootFillColorRest</Run>, which is built into <Run FontFamily="Consolas">FluentUITokens.xaml</Run>.
-			</TextBlock>
-			<TextBlock>
-				To change it, open
-				<Run FontFamily="Consolas">/src/tokens/fluentui.json</Run> in the prototype repo.
-			</TextBlock>
-			<TextBlock>
-				After building the code in the prototype repo, copy <Run FontFamily="Consolas">FluentUITokens.xaml</Run> to this repo and rebuild.
-			</TextBlock>
+	<Page.Resources>
+		<ResourceDictionary>
+			<ThemeShadow x:Name="SharedShadow" />
+		</ResourceDictionary>
+	</Page.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="320" />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid x:Name="TitleBar" Background="{StaticResource GlobalColorAccent100}" Grid.ColumnSpan="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="32" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+			<TextBlock Text="Home" Grid.Row="1" Margin="20,0,20,0" VerticalAlignment="Center" HorizontalAlignment="Left" IsHitTestVisible="False" Style="{StaticResource HeaderTextBlockStyle}" Foreground="{StaticResource TempAccentTextFillColorRest}" />
+			<AutoSuggestBox Grid.Column="1" Grid.Row="1" Width="280" VerticalAlignment="Center" QueryIcon="Find" PlaceholderText="Search" IsTabStop="False" />
+			<PersonPicture Grid.Column="2" Grid.Row="1" Width="32" Height="32" Margin="8" HorizontalAlignment="Center" VerticalAlignment="Center" PreferSmallImage="True" Initials="FUI" />
+		</Grid>
+		<Rectangle x:Name="ShadowBackground" Grid.Column="1" Grid.Row="1" />
+		<Rectangle x:Name="NavPane" Grid.Row="1" Fill="{StaticResource GlobalColorNeutral20}" Translation="0, 0, 16" Shadow="{StaticResource SharedShadow}" />
+		<StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+			<Image Source="Assets\Cloud.svg" Stretch="UniformToFill" Width="204" Height="164" Opacity="0.3" />
+			<TextBlock Margin="0, 40, 0, 40" Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Foreground="{StaticResource GlobalColorAccent120}">Some handy text here</TextBlock>
+			<Button Style="{StaticResource AccentButtonStyle}" HorizontalAlignment="Center" TabIndex="0">Accent</Button>
 		</StackPanel>
-	</ScrollViewer>
+	</Grid>
 
 </Page>
