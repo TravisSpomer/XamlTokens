@@ -1,0 +1,380 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<Style TargetType="TextBlock">
+		<Setter Property="FontFamily" Value="{ThemeResource BodyFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource BodyFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource BodyFontSize}" />
+		<Setter Property="LineHeight" Value="{ThemeResource BodyFontLineHeight}" />
+		<Setter Property="TextWrapping" Value="WrapWholeWords" />
+		<Setter Property="Margin" Value="0, 8, 0, 8" />
+	</Style>
+
+	<Style x:Key="HeaderTextBlockStyle" TargetType="TextBlock">
+		<Setter Property="FontFamily" Value="{ThemeResource HeaderFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource HeaderFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource HeaderFontSize}" />
+		<Setter Property="LineHeight" Value="{ThemeResource HeaderFontLineHeight}" />
+		<Setter Property="Margin" Value="0, 16, 0, 16" />
+	</Style>
+
+	<Style x:Key="SubheaderTextBlockStyle" TargetType="TextBlock">
+		<Setter Property="FontFamily" Value="{ThemeResource SubheaderFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource SubheaderFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource SubheaderFontSize}" />
+		<Setter Property="LineHeight" Value="{ThemeResource SubheaderFontLineHeight}" />
+		<Setter Property="Margin" Value="0, 12, 0, 12" />
+	</Style>
+			
+	<!-- Alias the existing WinUI design tokens on the new FluentUI design tokens -->
+	<StaticResource x:Key="CornerRadius" ResourceKey="ButtonRootCornerRadius" />
+	<StaticResource x:Key="ButtonPadding" ResourceKey="ButtonRootLayoutPadding" />
+	<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="ButtonRootStrokeWidth" />
+	<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="ButtonTextFontFamily" />
+	<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="ButtonTextFontWeight" />
+	<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="ButtonTextFontSize" />
+	<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="ButtonTextFontLineHeight" />
+
+	<!-- Neutral style design tokens-->
+	<StaticResource x:Key="ButtonForeground" ResourceKey="ButtonTextFillColorRest" />
+	<StaticResource x:Key="ButtonBackground" ResourceKey="ButtonRootFillColorRest" />
+	<StaticResource x:Key="ButtonBorderBrush" ResourceKey="ButtonRootStrokeColorRest" />
+	<StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="ButtonTextFillColorHover" />
+	<StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="ButtonRootFillColorHover" />
+	<StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="ButtonRootStrokeColorHover" />
+	<StaticResource x:Key="ButtonForegroundPressed" ResourceKey="ButtonTextFillColorPress" />
+	<StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="ButtonRootFillColorPress" />
+	<StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="ButtonRootStrokeColorPress" />
+	<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="ButtonTextFillColorDisabled" />
+	<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="ButtonRootFillColorDisabled" />
+	<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="ButtonRootStrokeColorDisabled" />
+
+	<!-- Accent style design tokens -->
+	<StaticResource x:Key="AccentButtonForeground" ResourceKey="AccentButtonTextFillColorRest" />
+	<StaticResource x:Key="AccentButtonBackground" ResourceKey="AccentButtonRootFillColorRest" />
+	<StaticResource x:Key="AccentButtonBorderBrush" ResourceKey="AccentButtonRootStrokeColorRest" />
+	<StaticResource x:Key="AccentButtonForegroundPointerOver" ResourceKey="AccentButtonTextFillColorHover" />
+	<StaticResource x:Key="AccentButtonBackgroundPointerOver" ResourceKey="AccentButtonRootFillColorHover" />
+	<StaticResource x:Key="AccentButtonBorderBrushPointerOver" ResourceKey="AccentButtonRootStrokeColorHover" />
+	<StaticResource x:Key="AccentButtonForegroundPressed" ResourceKey="AccentButtonTextFillColorPress" />
+	<StaticResource x:Key="AccentButtonBackgroundPressed" ResourceKey="AccentButtonRootFillColorPress" />
+	<StaticResource x:Key="AccentButtonBorderBrushPressed" ResourceKey="AccentButtonRootStrokeColorPress" />
+	<StaticResource x:Key="AccentButtonForegroundDisabled" ResourceKey="AccentButtonTextFillColorDisabled" />
+	<StaticResource x:Key="AccentButtonBackgroundDisabled" ResourceKey="AccentButtonRootFillColorDisabled" />
+	<StaticResource x:Key="AccentButtonBorderBrushDisabled" ResourceKey="AccentButtonRootStrokeColorDisabled" />
+
+	<!-- Outline style design tokens -->
+	<StaticResource x:Key="OutlineButtonForeground" ResourceKey="OutlineButtonTextFillColorRest" />
+	<StaticResource x:Key="OutlineButtonBackground" ResourceKey="OutlineButtonRootFillColorRest" />
+	<StaticResource x:Key="OutlineButtonBorderBrush" ResourceKey="OutlineButtonRootStrokeColorRest" />
+	<StaticResource x:Key="OutlineButtonForegroundPointerOver" ResourceKey="OutlineButtonTextFillColorHover" />
+	<StaticResource x:Key="OutlineButtonBackgroundPointerOver" ResourceKey="OutlineButtonRootFillColorHover" />
+	<StaticResource x:Key="OutlineButtonBorderBrushPointerOver" ResourceKey="OutlineButtonRootStrokeColorHover" />
+	<StaticResource x:Key="OutlineButtonForegroundPressed" ResourceKey="OutlineButtonTextFillColorPress" />
+	<StaticResource x:Key="OutlineButtonBackgroundPressed" ResourceKey="OutlineButtonRootFillColorPress" />
+	<StaticResource x:Key="OutlineButtonBorderBrushPressed" ResourceKey="OutlineButtonRootStrokeColorPress" />
+	<StaticResource x:Key="OutlineButtonForegroundDisabled" ResourceKey="OutlineButtonTextFillColorDisabled" />
+	<StaticResource x:Key="OutlineButtonBackgroundDisabled" ResourceKey="OutlineButtonRootFillColorDisabled" />
+	<StaticResource x:Key="OutlineButtonBorderBrushDisabled" ResourceKey="OutlineButtonRootStrokeColorDisabled" />
+
+	<!-- Transparent style design tokens -->
+	<StaticResource x:Key="TransparentButtonForeground" ResourceKey="TransparentButtonTextFillColorRest" />
+	<StaticResource x:Key="TransparentButtonBackground" ResourceKey="TransparentButtonRootFillColorRest" />
+	<StaticResource x:Key="TransparentButtonBorderBrush" ResourceKey="TransparentButtonRootStrokeColorRest" />
+	<StaticResource x:Key="TransparentButtonForegroundPointerOver" ResourceKey="TransparentButtonTextFillColorHover" />
+	<StaticResource x:Key="TransparentButtonBackgroundPointerOver" ResourceKey="TransparentButtonRootFillColorHover" />
+	<StaticResource x:Key="TransparentButtonBorderBrushPointerOver" ResourceKey="TransparentButtonRootStrokeColorHover" />
+	<StaticResource x:Key="TransparentButtonForegroundPressed" ResourceKey="TransparentButtonTextFillColorPress" />
+	<StaticResource x:Key="TransparentButtonBackgroundPressed" ResourceKey="TransparentButtonRootFillColorPress" />
+	<StaticResource x:Key="TransparentButtonBorderBrushPressed" ResourceKey="TransparentButtonRootStrokeColorPress" />
+	<StaticResource x:Key="TransparentButtonForegroundDisabled" ResourceKey="TransparentButtonTextFillColorDisabled" />
+	<StaticResource x:Key="TransparentButtonBackgroundDisabled" ResourceKey="TransparentButtonRootFillColorDisabled" />
+	<StaticResource x:Key="TransparentButtonBorderBrushDisabled" ResourceKey="TransparentButtonRootStrokeColorDisabled" />
+
+	<!--
+		Most properties on Button come from design tokens already, but a few don't (or are done so in a way that can't be overridden),
+		so make them work here.
+			
+		How to find the names of standard brushes:
+		https://github.com/microsoft/microsoft-ui-xaml/blob/master/dev/CommonStyles/Button_themeresources.xaml
+	-->
+	<Style TargetType="Button">
+		<Setter Property="BackgroundSizing" Value="InnerBorderEdge" />
+		<Setter Property="CornerRadius" Value="{ThemeResource CornerRadius}" />
+		<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
+		<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+		<!-- There's no way to override LineHeight without overriding Template, so we'd have to do that. Not important for now though. -->
+	</Style>
+
+	<Style x:Key="AccentButtonStyle" TargetType="Button" BasedOn="{StaticResource AccentButtonStyle}">
+		<Setter Property="Background" Value="{ThemeResource AccentButtonBackground}" />
+		<Setter Property="BackgroundSizing" Value="OuterBorderEdge" />
+		<Setter Property="Foreground" Value="{ThemeResource AccentButtonForeground}" />
+		<Setter Property="BorderBrush" Value="{ThemeResource AccentButtonBorderBrush}" />
+		<Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}" />
+		<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
+		<Setter Property="FocusVisualMargin" Value="-3" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<ContentPresenter
+						x:Name="ContentPresenter"
+						Background="{TemplateBinding Background}"
+						BackgroundSizing="{TemplateBinding BackgroundSizing}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						Content="{TemplateBinding Content}"
+						ContentTemplate="{TemplateBinding ContentTemplate}"
+						ContentTransitions="{TemplateBinding ContentTransitions}"
+						CornerRadius="{TemplateBinding CornerRadius}"
+						Padding="{TemplateBinding Padding}"
+						LineHeight="{ThemeResource ControlContentThemeFontLineHeight}"
+						HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+						VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+						AutomationProperties.AccessibilityView="Raw">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonBackgroundPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonBorderBrushPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonForegroundPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonBackgroundPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonBorderBrushPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonForegroundPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonBackgroundDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonBorderBrushDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource AccentButtonForegroundDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</ContentPresenter>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!-- The platform doesn't include outline and transparent button styles, so create one. -->
+	<!-- TODO: RevealButtonStyle, using the same color values as OutlineButtonStyle but with RevealBrush instead of SolidColorBrush.-->
+
+	<Style x:Key="OutlineButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="{ThemeResource OutlineButtonBackground}" />
+		<Setter Property="BackgroundSizing" Value="OuterBorderEdge" />
+		<Setter Property="Foreground" Value="{ThemeResource OutlineButtonForeground}" />
+		<Setter Property="BorderBrush" Value="{ThemeResource OutlineButtonBorderBrush}" />
+		<Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}" />
+		<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
+		<Setter Property="FocusVisualMargin" Value="-3" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<ContentPresenter
+						x:Name="ContentPresenter"
+						Background="{TemplateBinding Background}"
+						BackgroundSizing="{TemplateBinding BackgroundSizing}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						Content="{TemplateBinding Content}"
+						ContentTemplate="{TemplateBinding ContentTemplate}"
+						ContentTransitions="{TemplateBinding ContentTransitions}"
+						CornerRadius="{TemplateBinding CornerRadius}"
+						Padding="{TemplateBinding Padding}"
+						LineHeight="{ThemeResource ControlContentThemeFontLineHeight}"
+						HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+						VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+						AutomationProperties.AccessibilityView="Raw">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonBackgroundPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonBorderBrushPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonForegroundPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonBackgroundPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonBorderBrushPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonForegroundPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonBackgroundDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonBorderBrushDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource OutlineButtonForegroundDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</ContentPresenter>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style x:Key="TransparentButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="{ThemeResource TransparentButtonBackground}" />
+		<Setter Property="BackgroundSizing" Value="OuterBorderEdge" />
+		<Setter Property="Foreground" Value="{ThemeResource TransparentButtonForeground}" />
+		<Setter Property="BorderBrush" Value="{ThemeResource TransparentButtonBorderBrush}" />
+		<Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}" />
+		<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
+		<Setter Property="FocusVisualMargin" Value="-3" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<ContentPresenter
+						x:Name="ContentPresenter"
+						Background="{TemplateBinding Background}"
+						BackgroundSizing="{TemplateBinding BackgroundSizing}"
+						BorderBrush="{TemplateBinding BorderBrush}"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						Content="{TemplateBinding Content}"
+						ContentTemplate="{TemplateBinding ContentTemplate}"
+						ContentTransitions="{TemplateBinding ContentTransitions}"
+						CornerRadius="{TemplateBinding CornerRadius}"
+						Padding="{TemplateBinding Padding}"
+						LineHeight="{ThemeResource ControlContentThemeFontLineHeight}"
+						HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+						VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+						AutomationProperties.AccessibilityView="Raw">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal">
+									<Storyboard>
+										<PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="PointerOver">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonBackgroundPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonBorderBrushPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonForegroundPointerOver}" />
+										</ObjectAnimationUsingKeyFrames>
+										<PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonBackgroundPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonBorderBrushPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonForegroundPressed}" />
+										</ObjectAnimationUsingKeyFrames>
+										<PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter" />
+									</Storyboard>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonBackgroundDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonBorderBrushDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource TransparentButtonForegroundDisabled}" />
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</ContentPresenter>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+</ResourceDictionary>
