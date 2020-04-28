@@ -43,7 +43,7 @@
 		<Rectangle x:Name="ShadowBackground" Grid.Column="1" Grid.Row="1" />
 		<Rectangle x:Name="NavPane" Grid.Row="1" Fill="{StaticResource GlobalColorNeutral20}" Translation="0, 0, 16" Shadow="{StaticResource SharedShadow}" />
 		<StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
-			<Image Source="Assets\Cloud.svg" Stretch="UniformToFill" Width="204" Height="164" Opacity="0.2" />
+			<Image Source="Assets\Cloud.svg" Stretch="UniformToFill" Width="194" Height="156" Opacity="0.2" />
 			<TextBlock Margin="0, 24, 0, 24" Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Center" HorizontalTextAlignment="Center" Foreground="{StaticResource GlobalColorAccent120}">Some handy text here</TextBlock>
 			<Button Style="{StaticResource AccentButtonStyle}" HorizontalAlignment="Center" TabIndex="0">Accent</Button>
 		</StackPanel>
