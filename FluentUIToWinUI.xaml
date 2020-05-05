@@ -28,7 +28,6 @@
 	</Style>
 			
 	<!-- Alias the existing WinUI design tokens on the new FluentUI design tokens -->
-	<StaticResource x:Key="CornerRadius" ResourceKey="ButtonRootCornerRadius" />
 	<StaticResource x:Key="ButtonPadding" ResourceKey="ButtonRootLayoutPadding" />
 	<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="ButtonRootStrokeWidth" />
 	<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="ButtonTextFontFamily" />
@@ -104,6 +103,7 @@
 		<Setter Property="CornerRadius" Value="{ThemeResource CornerRadius}" />
 		<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
 		<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ButtonRootCornerRadius}" />
 		<!-- There's no way to override LineHeight without overriding Template, so we'd have to do that. Not important for now though. -->
 	</Style>
 
@@ -121,7 +121,7 @@
 		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
 		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
 		<Setter Property="FocusVisualMargin" Value="-3" />
-		<Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource AccentButtonRootCornerRadius}" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
@@ -213,7 +213,7 @@
 		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
 		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
 		<Setter Property="FocusVisualMargin" Value="-3" />
-		<Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource OutlineButtonRootCornerRadius}" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
@@ -302,7 +302,7 @@
 		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
 		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
 		<Setter Property="FocusVisualMargin" Value="-3" />
-		<Setter Property="CornerRadius" Value="{ThemeResource ControlCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource TransparentButtonRootCornerRadius}" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
