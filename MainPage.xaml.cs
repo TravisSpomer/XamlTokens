@@ -81,7 +81,6 @@ namespace XamlTokens
 			bindCornerYAnimation.SetScalarParameter("cornerY", cornerY);
 
 			var geometry = compositor.CreateRoundedRectangleGeometry();
-			geometry.CornerRadius = new Vector2(5f, 5f);
 			geometry.StartAnimation("CornerRadius.X", bindCornerXAnimation);
 			geometry.StartAnimation("CornerRadius.Y", bindCornerYAnimation);
 			geometry.StartAnimation("Size.X", bindWidthAnimation);
