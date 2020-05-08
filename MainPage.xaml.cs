@@ -39,9 +39,6 @@ namespace XamlTokens
 			titleBar.ButtonInactiveForegroundColor = Colors.White;
 
 			window.Activated += Window_Activated;
-
-			// <Rectangle x:Name="SpecialRect" Margin="50" Grid.Row="1" Grid.ColumnSpan="2" />
-			// AddPillVisuals(SpecialRect, Colors.Red, float.PositiveInfinity, float.PositiveInfinity);
 		}
 
 		private void Window_Activated(object sender, WindowActivatedEventArgs e)
@@ -63,6 +60,9 @@ namespace XamlTokens
 			radii.  The radii will be constrained so that there are no corners "sharper" than a circle, as in the
 			CSS border-radius property.  Corner radii of float.PositiveInfinity will produce a "pill" shape with
 			two circles on the short ends, connected by a rectangle.
+
+			<Rectangle x:Name="SpecialRect" Margin="50" Grid.Row="1" Grid.ColumnSpan="2" />
+			AddPillVisuals(SpecialRect, Colors.Red, float.PositiveInfinity, float.PositiveInfinity);
 		*/
 		private void AddPillVisuals(UIElement element, Color color, float cornerX, float cornerY)
 		{
