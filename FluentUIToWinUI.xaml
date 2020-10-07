@@ -721,67 +721,6 @@
 		</Setter>
 	</Style>
 
-	<!-- CheckBox design tokens -->
-	<StaticResource x:Key="CheckBoxTextFontFamily_UNUSED" ResourceKey="CheckBoxTextFontFamily" /><!-- reuses ContentControlThemeFontFamily etc. -->
-	<StaticResource x:Key="CheckBoxTextFontSize_UNUSED" ResourceKey="CheckBoxTextFontSize" />
-	<StaticResource x:Key="CheckBoxTextFontWeight_UNUSED" ResourceKey="CheckBoxTextFontWeight" />
-	<StaticResource x:Key="CheckBoxTextFontLineHeight_UNUSED" ResourceKey="CheckBoxTextFontLineHeight" />
-	
-	<StaticResource x:Key="CheckBoxForegroundChecked" ResourceKey="CheckBoxTextFillColorSelectedRest" />
-	<StaticResource x:Key="CheckBoxForegroundCheckedPointerOver" ResourceKey="CheckBoxTextFillColorSelectedHover" />
-	<StaticResource x:Key="CheckBoxForegroundCheckedPressed" ResourceKey="CheckBoxTextFillColorSelectedPress" />
-	<StaticResource x:Key="CheckBoxForegroundCheckedDisabled" ResourceKey="CheckBoxTextFillColorSelectedDisabled" />
-	<StaticResource x:Key="CheckBoxForegroundIndeterminate" ResourceKey="CheckBoxTextFillColorIndeterminateRest" />
-	<StaticResource x:Key="CheckBoxForegroundIndeterminatePointerOver" ResourceKey="CheckBoxTextFillColorIndeterminateHover" />
-	<StaticResource x:Key="CheckBoxForegroundIndeterminatePressed" ResourceKey="CheckBoxTextFillColorIndeterminatePress" />
-	<StaticResource x:Key="CheckBoxForegroundIndeterminateDisabled" ResourceKey="CheckBoxTextFillColorIndeterminateDisabled" />
-	<StaticResource x:Key="CheckBoxForegroundUnchecked" ResourceKey="CheckBoxTextFillColorRest" />
-	<StaticResource x:Key="CheckBoxForegroundUncheckedPointerOver" ResourceKey="CheckBoxTextFillColorHover" />
-	<StaticResource x:Key="CheckBoxForegroundUncheckedPressed" ResourceKey="CheckBoxTextFillColorPress" />
-	<StaticResource x:Key="CheckBoxForegroundUncheckedDisabled" ResourceKey="CheckBoxTextFillColorDisabled" />
-	
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundChecked" ResourceKey="CheckBoxCheckFillColorSelectedRest" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundCheckedPointerOver" ResourceKey="CheckBoxCheckFillColorSelectedHover" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundCheckedPressed" ResourceKey="CheckBoxCheckFillColorSelectedPress" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundCheckedDisabled" ResourceKey="CheckBoxCheckFillColorSelectedDisabled" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundIndeterminate" ResourceKey="CheckBoxCheckFillColorIndeterminateRest" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundIndeterminatePointerOver" ResourceKey="CheckBoxCheckFillColorIndeterminateHover" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundIndeterminatePressed" ResourceKey="CheckBoxCheckFillColorIndeterminatePress" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundIndeterminateDisabled" ResourceKey="CheckBoxCheckFillColorIndeterminateDisabled" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundUnchecked" ResourceKey="CheckBoxCheckFillColorRest" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundUncheckedPointerOver" ResourceKey="CheckBoxCheckFillColorHover" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundUncheckedPressed" ResourceKey="CheckBoxCheckFillColorPress" />
-	<StaticResource x:Key="CheckBoxCheckGlyphForegroundUncheckedDisabled" ResourceKey="CheckBoxCheckFillColorDisabled" />
-	
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillChecked" ResourceKey="CheckBoxBoxFillColorSelectedRest" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedPointerOver" ResourceKey="CheckBoxBoxFillColorSelectedHover" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedPressed" ResourceKey="CheckBoxBoxFillColorSelectedPress" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedDisabled" ResourceKey="CheckBoxBoxFillColorSelectedDisabled" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillIndeterminate" ResourceKey="CheckBoxBoxFillColorIndeterminateRest" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillIndeterminatePointerOver" ResourceKey="CheckBoxBoxFillColorIndeterminateHover" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillIndeterminatePressed" ResourceKey="CheckBoxBoxFillColorIndeterminatePress" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillIndeterminateDisabled" ResourceKey="CheckBoxBoxFillColorIndeterminateDisabled" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillUnchecked" ResourceKey="CheckBoxBoxFillColorRest" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillUncheckedPointerOver" ResourceKey="CheckBoxBoxFillColorHover" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillUncheckedPressed" ResourceKey="CheckBoxBoxFillColorPress" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundFillUncheckedDisabled" ResourceKey="CheckBoxBoxFillColorDisabled" />
-
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeChecked" ResourceKey="CheckBoxBoxStrokeColorSelectedRest" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeCheckedPointerOver" ResourceKey="CheckBoxBoxStrokeColorSelectedHover" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeCheckedPressed" ResourceKey="CheckBoxBoxStrokeColorSelectedPress" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeCheckedDisabled" ResourceKey="CheckBoxBoxStrokeColorSelectedDisabled" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeIndeterminate" ResourceKey="CheckBoxBoxStrokeColorIndeterminateRest" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeIndeterminatePointerOver" ResourceKey="CheckBoxBoxStrokeColorIndeterminateHover" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeIndeterminatePressed" ResourceKey="CheckBoxBoxStrokeColorIndeterminatePress" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeIndeterminateDisabled" ResourceKey="CheckBoxBoxStrokeColorIndeterminateDisabled" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeUnchecked" ResourceKey="CheckBoxBoxStrokeColorRest" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeUncheckedPointerOver" ResourceKey="CheckBoxBoxStrokeColorHover" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeUncheckedPressed" ResourceKey="CheckBoxBoxStrokeColorPress" />
-	<StaticResource x:Key="CheckBoxCheckBackgroundStrokeUncheckedDisabled" ResourceKey="CheckBoxBoxStrokeColorDisabled" />
-
-	<StaticResource x:Key="CheckBoxBorderThemeThickness" ResourceKey="CheckBoxBoxStrokeWidth" /><!-- WinUI style also includes a Checked thickness for HC to override -->
-	<StaticResource x:Key="CheckBoxCornerRadius_UNUSED" ResourceKey="CheckBoxBoxCornerRadius" />
-
 	<!-- CheckBox style from WinUI source -->
 	<!-- https://github.com/microsoft/microsoft-ui-xaml/blob/master/dev/CheckBox/CheckBox_themeresources.xaml -->
 

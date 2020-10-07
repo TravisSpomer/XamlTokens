@@ -46,9 +46,9 @@
 			<Image Source="Assets\Package.svg" Stretch="UniformToFill" Width="160" Height="160" Margin="0,0,0,24" />
 			<Button Style="{StaticResource AccentButtonStyle}" HorizontalAlignment="Center" TabIndex="0">Accent</Button>
 		</StackPanel>
-		
+
 		<Slider Grid.Column="1" HorizontalAlignment="Left" Margin="40,415,0,0" Grid.Row="1" VerticalAlignment="Top" Width="244" Maximum="100" LargeChange="10" TickPlacement="Outside" SmallChange="1" TickFrequency="25" Value="25" Visibility="Collapsed" />
-		<CheckBox Content="CheckBox" Grid.Column="1" Margin="40,361,0,0" Grid.Row="1" VerticalAlignment="Top" Visibility="Collapsed" />
+		<CheckBox Content="CheckBox" Grid.Column="1" Margin="20,10,0,0" Grid.Row="1" VerticalAlignment="Top" />
 	</Grid>
 
 </Page>
