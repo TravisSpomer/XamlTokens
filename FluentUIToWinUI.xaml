@@ -437,10 +437,10 @@
 									<Setter.Value>
 										<ControlTemplate TargetType="Thumb">
 											<Border
-                                                Background="{TemplateBinding Background}"
-                                                BorderBrush="{TemplateBinding BorderBrush}"
-                                                BorderThickness="{TemplateBinding BorderThickness}"
-                                                CornerRadius="{ThemeResource SliderThumbCornerRadius}" />
+												Background="{TemplateBinding Background}"
+												BorderBrush="{TemplateBinding BorderBrush}"
+												BorderThickness="{TemplateBinding BorderThickness}"
+												CornerRadius="{ThemeResource SliderThumbCornerRadius}" />
 										</ControlTemplate>
 									</Setter.Value>
 								</Setter>
@@ -583,19 +583,19 @@
 						</Grid.RowDefinitions>
 
 						<ContentPresenter x:Name="HeaderContentPresenter"
-                            Grid.Row="0"
-                            Content="{TemplateBinding Header}"
-                            ContentTemplate="{TemplateBinding HeaderTemplate}"
-                            FontWeight="{ThemeResource SliderHeaderThemeFontWeight}"
-                            Foreground="{ThemeResource SliderHeaderForeground}"
-                            Margin="{ThemeResource SliderTopHeaderMargin}"
-                            TextWrapping="Wrap"
-                            Visibility="Collapsed"
-                            x:DeferLoadStrategy="Lazy"/>
+							Grid.Row="0"
+							Content="{TemplateBinding Header}"
+							ContentTemplate="{TemplateBinding HeaderTemplate}"
+							FontWeight="{ThemeResource SliderHeaderThemeFontWeight}"
+							Foreground="{ThemeResource SliderHeaderForeground}"
+							Margin="{ThemeResource SliderTopHeaderMargin}"
+							TextWrapping="Wrap"
+							Visibility="Collapsed"
+							x:DeferLoadStrategy="Lazy"/>
 						<Grid x:Name="SliderContainer"
-                            Grid.Row="1"
-                            Background="{ThemeResource SliderContainerBackground}"
-                            Control.IsTemplateFocusTarget="True">
+							Grid.Row="1"
+							Background="{ThemeResource SliderContainerBackground}"
+							Control.IsTemplateFocusTarget="True">
 							<Grid x:Name="HorizontalTemplate" MinHeight="{ThemeResource SliderHorizontalHeight}">
 
 								<Grid.ColumnDefinitions>
@@ -611,46 +611,46 @@
 								</Grid.RowDefinitions>
 
 								<Rectangle x:Name="HorizontalTrackRect"
-                                    Fill="{TemplateBinding Background}"
-                                    Height="{ThemeResource SliderTrackThemeHeight}"
-                                    Grid.Row="1"
-                                    Grid.ColumnSpan="3"
-                                    RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
-                                    RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
+									Fill="{TemplateBinding Background}"
+									Height="{ThemeResource SliderTrackThemeHeight}"
+									Grid.Row="1"
+									Grid.ColumnSpan="3"
+									RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
+									RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
 								<Rectangle x:Name="HorizontalDecreaseRect" Fill="{TemplateBinding Foreground}" Grid.Row="1"
-                                    RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
-                                    RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
+									RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
+									RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
 								<TickBar x:Name="TopTickBar"
-                                    Visibility="Collapsed"
-                                    Fill="{ThemeResource SliderTickBarFill}"
-                                    Height="{ThemeResource SliderOutsideTickBarThemeHeight}"
-                                    VerticalAlignment="Bottom"
-                                    Margin="0,0,0,4"
-                                    Grid.ColumnSpan="3" />
+									Visibility="Collapsed"
+									Fill="{ThemeResource SliderTickBarFill}"
+									Height="{ThemeResource SliderOutsideTickBarThemeHeight}"
+									VerticalAlignment="Bottom"
+									Margin="0,0,0,4"
+									Grid.ColumnSpan="3" />
 								<TickBar x:Name="HorizontalInlineTickBar"
-                                    Visibility="Collapsed"
-                                    Fill="{ThemeResource SliderInlineTickBarFill}"
-                                    Height="{ThemeResource SliderTrackThemeHeight}"
-                                    Grid.Row="1"
-                                    Grid.ColumnSpan="3" />
+									Visibility="Collapsed"
+									Fill="{ThemeResource SliderInlineTickBarFill}"
+									Height="{ThemeResource SliderTrackThemeHeight}"
+									Grid.Row="1"
+									Grid.ColumnSpan="3" />
 								<TickBar x:Name="BottomTickBar"
-                                    Visibility="Collapsed"
-                                    Fill="{ThemeResource SliderTickBarFill}"
-                                    Height="{ThemeResource SliderOutsideTickBarThemeHeight}"
-                                    VerticalAlignment="Top"
-                                    Margin="0,4,0,0"
-                                    Grid.Row="2"
-                                    Grid.ColumnSpan="3" />
+									Visibility="Collapsed"
+									Fill="{ThemeResource SliderTickBarFill}"
+									Height="{ThemeResource SliderOutsideTickBarThemeHeight}"
+									VerticalAlignment="Top"
+									Margin="0,4,0,0"
+									Grid.Row="2"
+									Grid.ColumnSpan="3" />
 								<Thumb x:Name="HorizontalThumb"
-                                    Style="{StaticResource SliderThumbStyle}"
-                                    DataContext="{TemplateBinding Value}"
-                                    Height="{ThemeResource SliderHorizontalThumbHeight}"
-                                    Width="{ThemeResource SliderHorizontalThumbWidth}"
-                                    Grid.Row="0"
-                                    Grid.RowSpan="3"
-                                    Grid.Column="1"
-                                    FocusVisualMargin="-14,-6,-14,-6"
-                                    AutomationProperties.AccessibilityView="Raw" />
+									Style="{StaticResource SliderThumbStyle}"
+									DataContext="{TemplateBinding Value}"
+									Height="{ThemeResource SliderHorizontalThumbHeight}"
+									Width="{ThemeResource SliderHorizontalThumbWidth}"
+									Grid.Row="0"
+									Grid.RowSpan="3"
+									Grid.Column="1"
+									FocusVisualMargin="-14,-6,-14,-6"
+									AutomationProperties.AccessibilityView="Raw" />
 							</Grid>
 							<Grid x:Name="VerticalTemplate" MinWidth="{ThemeResource SliderVerticalWidth}" Visibility="Collapsed">
 
@@ -667,49 +667,49 @@
 								</Grid.ColumnDefinitions>
 
 								<Rectangle x:Name="VerticalTrackRect"
-                                    Fill="{TemplateBinding Background}"
-                                    Width="{ThemeResource SliderTrackThemeHeight}"
-                                    Grid.Column="1"
-                                    Grid.RowSpan="3"
-                                    RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
-                                    RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
+									Fill="{TemplateBinding Background}"
+									Width="{ThemeResource SliderTrackThemeHeight}"
+									Grid.Column="1"
+									Grid.RowSpan="3"
+									RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
+									RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
 								<Rectangle x:Name="VerticalDecreaseRect"
-                                    Fill="{TemplateBinding Foreground}"
-                                    Grid.Column="1"
-                                    Grid.Row="2"
-                                    RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
-                                    RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
+									Fill="{TemplateBinding Foreground}"
+									Grid.Column="1"
+									Grid.Row="2"
+									RadiusX="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource TopLeftCornerRadiusDoubleValueConverter}}"
+									RadiusY="{Binding CornerRadius, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BottomRightCornerRadiusDoubleValueConverter}}" />
 								<TickBar x:Name="LeftTickBar"
-                                    Visibility="Collapsed"
-                                    Fill="{ThemeResource SliderTickBarFill}"
-                                    Width="{ThemeResource SliderOutsideTickBarThemeHeight}"
-                                    HorizontalAlignment="Right"
-                                    Margin="0,0,4,0"
-                                    Grid.RowSpan="3" />
+									Visibility="Collapsed"
+									Fill="{ThemeResource SliderTickBarFill}"
+									Width="{ThemeResource SliderOutsideTickBarThemeHeight}"
+									HorizontalAlignment="Right"
+									Margin="0,0,4,0"
+									Grid.RowSpan="3" />
 								<TickBar x:Name="VerticalInlineTickBar"
-                                    Visibility="Collapsed"
-                                    Fill="{ThemeResource SliderInlineTickBarFill}"
-                                    Width="{ThemeResource SliderTrackThemeHeight}"
-                                    Grid.Column="1"
-                                    Grid.RowSpan="3" />
+									Visibility="Collapsed"
+									Fill="{ThemeResource SliderInlineTickBarFill}"
+									Width="{ThemeResource SliderTrackThemeHeight}"
+									Grid.Column="1"
+									Grid.RowSpan="3" />
 								<TickBar x:Name="RightTickBar"
-                                    Visibility="Collapsed"
-                                    Fill="{ThemeResource SliderTickBarFill}"
-                                    Width="{ThemeResource SliderOutsideTickBarThemeHeight}"
-                                    HorizontalAlignment="Left"
-                                    Margin="4,0,0,0"
-                                    Grid.Column="2"
-                                    Grid.RowSpan="3" />
+									Visibility="Collapsed"
+									Fill="{ThemeResource SliderTickBarFill}"
+									Width="{ThemeResource SliderOutsideTickBarThemeHeight}"
+									HorizontalAlignment="Left"
+									Margin="4,0,0,0"
+									Grid.Column="2"
+									Grid.RowSpan="3" />
 								<Thumb x:Name="VerticalThumb"
-                                    Style="{StaticResource SliderThumbStyle}"
-                                    DataContext="{TemplateBinding Value}"
-                                    Width="{ThemeResource SliderVerticalThumbWidth}"
-                                    Height="{ThemeResource SliderVerticalThumbHeight}"
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    Grid.ColumnSpan="3"
-                                    FocusVisualMargin="-6,-14,-6,-14"
-                                    AutomationProperties.AccessibilityView="Raw" />
+									Style="{StaticResource SliderThumbStyle}"
+									DataContext="{TemplateBinding Value}"
+									Width="{ThemeResource SliderVerticalThumbWidth}"
+									Height="{ThemeResource SliderVerticalThumbHeight}"
+									Grid.Row="1"
+									Grid.Column="0"
+									Grid.ColumnSpan="3"
+									FocusVisualMargin="-6,-14,-6,-14"
+									AutomationProperties.AccessibilityView="Raw" />
 							</Grid>
 
 						</Grid>
