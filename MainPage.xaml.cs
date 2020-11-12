@@ -47,10 +47,10 @@ namespace XamlTokens
 			{
 				case CoreWindowActivationState.CodeActivated:
 				case CoreWindowActivationState.PointerActivated:
-					TitleBar.Background = App.Current.Resources["GlobalColorAccentBase"] as Brush;
+					TitleBar.Background = App.Current.Resources["BrandBackgroundFillColorRest"] as Brush;
 					break;
 				case CoreWindowActivationState.Deactivated:
-					TitleBar.Background = App.Current.Resources["GlobalColorNeutral61"] as Brush;
+					TitleBar.Background = App.Current.Resources["GlobalColorGrey60"] as Brush;
 					break;
 			}
 		}

@@ -23,7 +23,7 @@
 			<ColumnDefinition Width="320" />
 			<ColumnDefinition />
 		</Grid.ColumnDefinitions>
-		<Grid x:Name="TitleBar" Background="{StaticResource GlobalColorAccentBase}" Grid.ColumnSpan="2">
+		<Grid x:Name="TitleBar" Background="{StaticResource BrandBackgroundFillColorRest}" Grid.ColumnSpan="2">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition />
 				<ColumnDefinition Width="Auto" />
@@ -33,15 +33,15 @@
 				<RowDefinition Height="32" />
 				<RowDefinition Height="Auto" />
 			</Grid.RowDefinitions>
-			<TextBlock Text="Home" Grid.Row="1" Margin="12,0,12,0" VerticalAlignment="Center" HorizontalAlignment="Left" IsHitTestVisible="False" Style="{StaticResource SubheaderTextBlockStyle}" Foreground="{StaticResource GlobalColorGlyphOnAccentBase}" />
-			<Grid Grid.Column="1" Grid.Row="1" Width="280" Height="32" VerticalAlignment="Center" Background="#4c000000" CornerRadius="{StaticResource ButtonRootCornerRadius}" Padding="8, 2, 8, 2" IsHitTestVisible="False">
+			<TextBlock Text="Home" Grid.Row="1" Margin="12,0,12,0" VerticalAlignment="Center" HorizontalAlignment="Left" IsHitTestVisible="False" Style="{StaticResource SubheaderTextBlockStyle}" Foreground="{StaticResource NeutralForegroundInvertedAccessibleFillColorRest}" />
+			<Grid Grid.Column="1" Grid.Row="1" Width="280" Height="32" VerticalAlignment="Center" Background="#4c000000" CornerRadius="{StaticResource ButtonBaseCornerRadius}" Padding="8, 2, 8, 2" IsHitTestVisible="False">
 				<TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#80ffffff">Search</TextBlock>
 				<SymbolIcon HorizontalAlignment="Right" VerticalAlignment="Center" Symbol="Find" Foreground="#80ffffff" />
 			</Grid>
 			<PersonPicture Grid.Column="2" Grid.Row="1" Width="32" Height="32" Margin="8" HorizontalAlignment="Center" VerticalAlignment="Center" PreferSmallImage="True" DisplayName="Kat Larsson" Initials="KL" ProfilePicture="/Assets/Avatar.jpg" IsHitTestVisible="False" />
 		</Grid>
 		<Rectangle x:Name="ShadowBackground" Grid.Column="1" Grid.Row="1" />
-		<Rectangle x:Name="NavPane" Grid.Row="1" Fill="{StaticResource Surface2FillColorRest}" Translation="0, 0, 16" Shadow="{StaticResource SharedShadow}" />
+		<Rectangle x:Name="NavPane" Grid.Row="1" Fill="{StaticResource NeutralBackground2FillColorRest}" Translation="0, 0, 16" Shadow="{StaticResource SharedShadow}" />
 		<StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
 			<Image Source="Assets\Package.svg" Stretch="UniformToFill" Width="160" Height="160" Margin="0,0,0,24" />
 			<Button Style="{StaticResource AccentButtonStyle}" HorizontalAlignment="Center" TabIndex="0">Accent</Button>

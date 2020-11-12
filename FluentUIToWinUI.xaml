@@ -12,84 +12,84 @@
 	</Style>
 
 	<Style x:Key="HeaderTextBlockStyle" TargetType="TextBlock">
-		<Setter Property="FontFamily" Value="{ThemeResource HeaderFontFamily}" />
-		<Setter Property="FontWeight" Value="{ThemeResource HeaderFontWeight}" />
-		<Setter Property="FontSize" Value="{ThemeResource HeaderFontSize}" />
-		<Setter Property="LineHeight" Value="{ThemeResource HeaderFontLineHeight}" />
+		<Setter Property="FontFamily" Value="{ThemeResource HeadlineFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource HeadlineFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource HeadlineFontSize}" />
+		<Setter Property="LineHeight" Value="{ThemeResource HeadlineFontLineHeight}" />
 		<Setter Property="Margin" Value="0, 16, 0, 16" />
 	</Style>
 
 	<Style x:Key="SubheaderTextBlockStyle" TargetType="TextBlock">
-		<Setter Property="FontFamily" Value="{ThemeResource SubheaderFontFamily}" />
-		<Setter Property="FontWeight" Value="{ThemeResource SubheaderFontWeight}" />
-		<Setter Property="FontSize" Value="{ThemeResource SubheaderFontSize}" />
-		<Setter Property="LineHeight" Value="{ThemeResource SubheaderFontLineHeight}" />
+		<Setter Property="FontFamily" Value="{ThemeResource SubheadlineFontFamily}" />
+		<Setter Property="FontWeight" Value="{ThemeResource SubheadlineFontWeight}" />
+		<Setter Property="FontSize" Value="{ThemeResource SubheadlineFontSize}" />
+		<Setter Property="LineHeight" Value="{ThemeResource SubheadlineFontLineHeight}" />
 		<Setter Property="Margin" Value="0, 12, 0, 12" />
 	</Style>
 			
 	<!-- Button style-independent design tokens -->
-	<StaticResource x:Key="ButtonPadding" ResourceKey="ButtonRootLayoutPadding" />
-	<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="ButtonRootStrokeWidth" />
-	<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="ButtonTextFontFamily" />
-	<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="ButtonTextFontWeight" />
-	<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="ButtonTextFontSize" />
-	<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="ButtonTextFontLineHeight" />
+	<StaticResource x:Key="ButtonPadding" ResourceKey="ButtonBaseLayoutPadding" />
+	<StaticResource x:Key="ButtonBorderThemeThickness" ResourceKey="ButtonBaseStrokeWidth" />
+	<StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="ButtonContentFontFamily" />
+	<StaticResource x:Key="ContentControlThemeFontWeight" ResourceKey="ButtonContentFontWeight" />
+	<StaticResource x:Key="ControlContentThemeFontSize" ResourceKey="ButtonContentFontSize" />
+	<StaticResource x:Key="ControlContentThemeFontLineHeight" ResourceKey="ButtonContentFontLineHeight" />
 
 	<!-- Button (neutral) design tokens-->
-	<StaticResource x:Key="ButtonForeground" ResourceKey="ButtonTextFillColorRest" />
-	<StaticResource x:Key="ButtonBackground" ResourceKey="ButtonRootFillColorRest" />
-	<StaticResource x:Key="ButtonBorderBrush" ResourceKey="ButtonRootStrokeColorRest" />
-	<StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="ButtonTextFillColorHover" />
-	<StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="ButtonRootFillColorHover" />
-	<StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="ButtonRootStrokeColorHover" />
-	<StaticResource x:Key="ButtonForegroundPressed" ResourceKey="ButtonTextFillColorPress" />
-	<StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="ButtonRootFillColorPress" />
-	<StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="ButtonRootStrokeColorPress" />
-	<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="ButtonTextFillColorDisabled" />
-	<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="ButtonRootFillColorDisabled" />
-	<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="ButtonRootStrokeColorDisabled" />
+	<StaticResource x:Key="ButtonForeground" ResourceKey="ButtonContentFillColorRest" />
+	<StaticResource x:Key="ButtonBackground" ResourceKey="ButtonBaseFillColorRest" />
+	<StaticResource x:Key="ButtonBorderBrush" ResourceKey="ButtonBaseStrokeColorRest" />
+	<StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="ButtonContentFillColorHover" />
+	<StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="ButtonBaseFillColorHover" />
+	<StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="ButtonBaseStrokeColorHover" />
+	<StaticResource x:Key="ButtonForegroundPressed" ResourceKey="ButtonContentFillColorPressed" />
+	<StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="ButtonBaseFillColorPressed" />
+	<StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="ButtonBaseStrokeColorPressed" />
+	<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="ButtonContentFillColorDisabled" />
+	<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="ButtonBaseFillColorDisabled" />
+	<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="ButtonBaseStrokeColorDisabled" />
 
 	<!-- AccentButton design tokens -->
-	<StaticResource x:Key="AccentButtonForeground" ResourceKey="AccentButtonTextFillColorRest" />
-	<StaticResource x:Key="AccentButtonBackground" ResourceKey="AccentButtonRootFillColorRest" />
-	<StaticResource x:Key="AccentButtonBorderBrush" ResourceKey="AccentButtonRootStrokeColorRest" />
-	<StaticResource x:Key="AccentButtonForegroundPointerOver" ResourceKey="AccentButtonTextFillColorHover" />
-	<StaticResource x:Key="AccentButtonBackgroundPointerOver" ResourceKey="AccentButtonRootFillColorHover" />
-	<StaticResource x:Key="AccentButtonBorderBrushPointerOver" ResourceKey="AccentButtonRootStrokeColorHover" />
-	<StaticResource x:Key="AccentButtonForegroundPressed" ResourceKey="AccentButtonTextFillColorPress" />
-	<StaticResource x:Key="AccentButtonBackgroundPressed" ResourceKey="AccentButtonRootFillColorPress" />
-	<StaticResource x:Key="AccentButtonBorderBrushPressed" ResourceKey="AccentButtonRootStrokeColorPress" />
-	<StaticResource x:Key="AccentButtonForegroundDisabled" ResourceKey="AccentButtonTextFillColorDisabled" />
-	<StaticResource x:Key="AccentButtonBackgroundDisabled" ResourceKey="AccentButtonRootFillColorDisabled" />
-	<StaticResource x:Key="AccentButtonBorderBrushDisabled" ResourceKey="AccentButtonRootStrokeColorDisabled" />
+	<StaticResource x:Key="AccentButtonForeground" ResourceKey="ButtonPrimaryContentFillColorRest" />
+	<StaticResource x:Key="AccentButtonBackground" ResourceKey="ButtonPrimaryBaseFillColorRest" />
+	<StaticResource x:Key="AccentButtonBorderBrush" ResourceKey="ButtonPrimaryBaseStrokeColorRest" />
+	<StaticResource x:Key="AccentButtonForegroundPointerOver" ResourceKey="ButtonPrimaryContentFillColorHover" />
+	<StaticResource x:Key="AccentButtonBackgroundPointerOver" ResourceKey="ButtonPrimaryBaseFillColorHover" />
+	<StaticResource x:Key="AccentButtonBorderBrushPointerOver" ResourceKey="ButtonPrimaryBaseStrokeColorHover" />
+	<StaticResource x:Key="AccentButtonForegroundPressed" ResourceKey="ButtonPrimaryContentFillColorPressed" />
+	<StaticResource x:Key="AccentButtonBackgroundPressed" ResourceKey="ButtonPrimaryBaseFillColorPressed" />
+	<StaticResource x:Key="AccentButtonBorderBrushPressed" ResourceKey="ButtonPrimaryBaseStrokeColorPressed" />
+	<StaticResource x:Key="AccentButtonForegroundDisabled" ResourceKey="ButtonPrimaryContentFillColorDisabled" />
+	<StaticResource x:Key="AccentButtonBackgroundDisabled" ResourceKey="ButtonPrimaryBaseFillColorDisabled" />
+	<StaticResource x:Key="AccentButtonBorderBrushDisabled" ResourceKey="ButtonPrimaryBaseStrokeColorDisabled" />
 
 	<!-- OutlineButton design tokens -->
-	<StaticResource x:Key="OutlineButtonForeground" ResourceKey="OutlineButtonTextFillColorRest" />
-	<StaticResource x:Key="OutlineButtonBackground" ResourceKey="OutlineButtonRootFillColorRest" />
-	<StaticResource x:Key="OutlineButtonBorderBrush" ResourceKey="OutlineButtonRootStrokeColorRest" />
-	<StaticResource x:Key="OutlineButtonForegroundPointerOver" ResourceKey="OutlineButtonTextFillColorHover" />
-	<StaticResource x:Key="OutlineButtonBackgroundPointerOver" ResourceKey="OutlineButtonRootFillColorHover" />
-	<StaticResource x:Key="OutlineButtonBorderBrushPointerOver" ResourceKey="OutlineButtonRootStrokeColorHover" />
-	<StaticResource x:Key="OutlineButtonForegroundPressed" ResourceKey="OutlineButtonTextFillColorPress" />
-	<StaticResource x:Key="OutlineButtonBackgroundPressed" ResourceKey="OutlineButtonRootFillColorPress" />
-	<StaticResource x:Key="OutlineButtonBorderBrushPressed" ResourceKey="OutlineButtonRootStrokeColorPress" />
-	<StaticResource x:Key="OutlineButtonForegroundDisabled" ResourceKey="OutlineButtonTextFillColorDisabled" />
-	<StaticResource x:Key="OutlineButtonBackgroundDisabled" ResourceKey="OutlineButtonRootFillColorDisabled" />
-	<StaticResource x:Key="OutlineButtonBorderBrushDisabled" ResourceKey="OutlineButtonRootStrokeColorDisabled" />
+	<StaticResource x:Key="OutlineButtonForeground" ResourceKey="ButtonOutlineContentFillColorRest" />
+	<StaticResource x:Key="OutlineButtonBackground" ResourceKey="ButtonOutlineBaseFillColorRest" />
+	<StaticResource x:Key="OutlineButtonBorderBrush" ResourceKey="ButtonOutlineBaseStrokeColorRest" />
+	<StaticResource x:Key="OutlineButtonForegroundPointerOver" ResourceKey="ButtonOutlineContentFillColorHover" />
+	<StaticResource x:Key="OutlineButtonBackgroundPointerOver" ResourceKey="ButtonOutlineBaseFillColorHover" />
+	<StaticResource x:Key="OutlineButtonBorderBrushPointerOver" ResourceKey="ButtonOutlineBaseStrokeColorHover" />
+	<StaticResource x:Key="OutlineButtonForegroundPressed" ResourceKey="ButtonOutlineContentFillColorPressed" />
+	<StaticResource x:Key="OutlineButtonBackgroundPressed" ResourceKey="ButtonOutlineBaseFillColorPressed" />
+	<StaticResource x:Key="OutlineButtonBorderBrushPressed" ResourceKey="ButtonOutlineBaseStrokeColorPressed" />
+	<StaticResource x:Key="OutlineButtonForegroundDisabled" ResourceKey="ButtonOutlineContentFillColorDisabled" />
+	<StaticResource x:Key="OutlineButtonBackgroundDisabled" ResourceKey="ButtonOutlineBaseFillColorDisabled" />
+	<StaticResource x:Key="OutlineButtonBorderBrushDisabled" ResourceKey="ButtonOutlineBaseStrokeColorDisabled" />
 
 	<!-- TransparentButton design tokens -->
-	<StaticResource x:Key="TransparentButtonForeground" ResourceKey="TransparentButtonTextFillColorRest" />
-	<StaticResource x:Key="TransparentButtonBackground" ResourceKey="TransparentButtonRootFillColorRest" />
-	<StaticResource x:Key="TransparentButtonBorderBrush" ResourceKey="TransparentButtonRootStrokeColorRest" />
-	<StaticResource x:Key="TransparentButtonForegroundPointerOver" ResourceKey="TransparentButtonTextFillColorHover" />
-	<StaticResource x:Key="TransparentButtonBackgroundPointerOver" ResourceKey="TransparentButtonRootFillColorHover" />
-	<StaticResource x:Key="TransparentButtonBorderBrushPointerOver" ResourceKey="TransparentButtonRootStrokeColorHover" />
-	<StaticResource x:Key="TransparentButtonForegroundPressed" ResourceKey="TransparentButtonTextFillColorPress" />
-	<StaticResource x:Key="TransparentButtonBackgroundPressed" ResourceKey="TransparentButtonRootFillColorPress" />
-	<StaticResource x:Key="TransparentButtonBorderBrushPressed" ResourceKey="TransparentButtonRootStrokeColorPress" />
-	<StaticResource x:Key="TransparentButtonForegroundDisabled" ResourceKey="TransparentButtonTextFillColorDisabled" />
-	<StaticResource x:Key="TransparentButtonBackgroundDisabled" ResourceKey="TransparentButtonRootFillColorDisabled" />
-	<StaticResource x:Key="TransparentButtonBorderBrushDisabled" ResourceKey="TransparentButtonRootStrokeColorDisabled" />
+	<StaticResource x:Key="TransparentButtonForeground" ResourceKey="ButtonGhostContentFillColorRest" />
+	<StaticResource x:Key="TransparentButtonBackground" ResourceKey="ButtonGhostBaseFillColorRest" />
+	<StaticResource x:Key="TransparentButtonBorderBrush" ResourceKey="ButtonGhostBaseStrokeColorRest" />
+	<StaticResource x:Key="TransparentButtonForegroundPointerOver" ResourceKey="ButtonGhostContentFillColorHover" />
+	<StaticResource x:Key="TransparentButtonBackgroundPointerOver" ResourceKey="ButtonGhostBaseFillColorHover" />
+	<StaticResource x:Key="TransparentButtonBorderBrushPointerOver" ResourceKey="ButtonGhostBaseStrokeColorHover" />
+	<StaticResource x:Key="TransparentButtonForegroundPressed" ResourceKey="ButtonGhostContentFillColorPressed" />
+	<StaticResource x:Key="TransparentButtonBackgroundPressed" ResourceKey="ButtonGhostBaseFillColorPressed" />
+	<StaticResource x:Key="TransparentButtonBorderBrushPressed" ResourceKey="ButtonGhostBaseStrokeColorPressed" />
+	<StaticResource x:Key="TransparentButtonForegroundDisabled" ResourceKey="ButtonGhostContentFillColorDisabled" />
+	<StaticResource x:Key="TransparentButtonBackgroundDisabled" ResourceKey="ButtonGhostBaseFillColorDisabled" />
+	<StaticResource x:Key="TransparentButtonBorderBrushDisabled" ResourceKey="ButtonGhostBaseStrokeColorDisabled" />
 
 	<!--
 		Most properties on Button come from design tokens already, but a few don't (or are done so in a way that can't be overridden),
@@ -103,7 +103,7 @@
 		<Setter Property="CornerRadius" Value="{ThemeResource CornerRadius}" />
 		<Setter Property="FontWeight" Value="{ThemeResource ContentControlThemeFontWeight}" />
 		<Setter Property="Padding" Value="{ThemeResource ButtonPadding}" />
-		<Setter Property="CornerRadius" Value="{ThemeResource ButtonRootCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ButtonBaseCornerRadius}" />
 		<!-- There's no way to override LineHeight without overriding Template, so we'd have to do that. Not important for now though. -->
 	</Style>
 
@@ -121,7 +121,7 @@
 		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
 		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
 		<Setter Property="FocusVisualMargin" Value="-3" />
-		<Setter Property="CornerRadius" Value="{ThemeResource AccentButtonRootCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ButtonPrimaryBaseCornerRadius}" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
@@ -213,7 +213,7 @@
 		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
 		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
 		<Setter Property="FocusVisualMargin" Value="-3" />
-		<Setter Property="CornerRadius" Value="{ThemeResource OutlineButtonRootCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ButtonOutlineBaseCornerRadius}" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
@@ -302,7 +302,7 @@
 		<Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
 		<Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
 		<Setter Property="FocusVisualMargin" Value="-3" />
-		<Setter Property="CornerRadius" Value="{ThemeResource TransparentButtonRootCornerRadius}" />
+		<Setter Property="CornerRadius" Value="{ThemeResource ButtonGhostBaseCornerRadius}" />
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
@@ -380,11 +380,11 @@
 	<!-- Slider design tokens -->
 	<StaticResource x:Key="SliderThumbBackground" ResourceKey="SliderThumbFillColorRest" />
 	<StaticResource x:Key="SliderThumbBackgroundPointerOver" ResourceKey="SliderThumbFillColorHover" />
-	<StaticResource x:Key="SliderThumbBackgroundPressed" ResourceKey="SliderThumbFillColorPress" />
+	<StaticResource x:Key="SliderThumbBackgroundPressed" ResourceKey="SliderThumbFillColorPressed" />
 	<StaticResource x:Key="SliderThumbBackgroundDisabled" ResourceKey="SliderThumbFillColorDisabled" />
 	<StaticResource x:Key="SliderThumbBorderThemeBrush" ResourceKey="SliderThumbStrokeColorRest" />
 	<StaticResource x:Key="SliderThumbPointerOverBorderThemeBrush_NOTUSED" ResourceKey="SliderThumbStrokeColorHover" />
-	<StaticResource x:Key="SliderThumbPressedBorderThemeBrush_NOTUSED" ResourceKey="SliderThumbStrokeColorPress" />
+	<StaticResource x:Key="SliderThumbPressedBorderThemeBrush_NOTUSED" ResourceKey="SliderThumbStrokeColorPressed" />
 	<StaticResource x:Key="SliderThumbDisabledBackgroundThemeBrush" ResourceKey="SliderThumbStrokeColorDisabled" />
 	<StaticResource x:Key="SliderThumbBorderThemeThickness_NOTUSED" ResourceKey="SliderThumbStrokeWidth" />
 	<StaticResource x:Key="SliderHorizontalThumbWidth" ResourceKey="SliderThumbLayoutWidth" />
@@ -392,16 +392,16 @@
 	<StaticResource x:Key="SliderThumbCornerRadius" ResourceKey="SliderThumbCornerRadius" />
 	<StaticResource x:Key="SliderTrackFill" ResourceKey="SliderTrackFillColorEmptyRest" />
 	<StaticResource x:Key="SliderTrackFillPointerOver" ResourceKey="SliderTrackFillColorEmptyHover" />
-	<StaticResource x:Key="SliderTrackFillPressed" ResourceKey="SliderTrackFillColorEmptyPress" />
+	<StaticResource x:Key="SliderTrackFillPressed" ResourceKey="SliderTrackFillColorEmptyPressed" />
 	<StaticResource x:Key="SliderTrackFillDisabled" ResourceKey="SliderTrackFillColorEmptyDisabled" />
 	<StaticResource x:Key="SliderTrackValueFill" ResourceKey="SliderTrackFillColorFullRest" />
 	<StaticResource x:Key="SliderTrackValueFillPointerOver" ResourceKey="SliderTrackFillColorFullHover" />
-	<StaticResource x:Key="SliderTrackValueFillPressed" ResourceKey="SliderTrackFillColorFullPress" />
+	<StaticResource x:Key="SliderTrackValueFillPressed" ResourceKey="SliderTrackFillColorFullPressed" />
 	<StaticResource x:Key="SliderTrackValueFillDisabled" ResourceKey="SliderTrackFillColorFullDisabled" />
 	<StaticResource x:Key="SliderTrackThemeHeight" ResourceKey="SliderTrackLayoutHeight" />
 	<StaticResource x:Key="SliderTickBarFill" ResourceKey="SliderTicksFillColorRest" />
 	<StaticResource x:Key="SliderTickBarFillPointerOver_NOTUSED" ResourceKey="SliderTicksFillColorHover" />
-	<StaticResource x:Key="SliderTickBarFillPress_NOTUSED" ResourceKey="SliderTicksFillColorPress" />
+	<StaticResource x:Key="SliderTickBarFillPress_NOTUSED" ResourceKey="SliderTicksFillColorPressed" />
 	<StaticResource x:Key="SliderTickBarFillDisabled" ResourceKey="SliderTicksFillColorDisabled" />
 	<StaticResource x:Key="SliderOutsideTickBarThemeHeight" ResourceKey="SliderTicksLayoutHeight" />
 	
@@ -751,7 +751,7 @@
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="CheckBox">
-					<Grid x:Name="RootGrid"
+					<Grid x:Name="BaseGrid"
 						Background="{TemplateBinding Background}"
 						BorderBrush="{TemplateBinding BorderBrush}"
 						BorderThickness="{TemplateBinding BorderThickness}"
@@ -765,10 +765,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundUnchecked}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundUnchecked}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushUnchecked}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -788,10 +788,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundUncheckedPointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundUncheckedPointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushUncheckedPointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -811,10 +811,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundUncheckedPressed}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundUncheckedPressed}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushUncheckedPressed}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -834,10 +834,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundUncheckedDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundUncheckedDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushUncheckedDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -857,10 +857,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundChecked}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundChecked}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushChecked}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -888,10 +888,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundCheckedPointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundCheckedPointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushCheckedPointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -915,10 +915,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundCheckedPressed}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundCheckedPressed}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushCheckedPressed}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -942,10 +942,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundCheckedDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundCheckedDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushCheckedDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -969,10 +969,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundIndeterminate}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundIndeterminate}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushIndeterminate}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -999,10 +999,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundIndeterminatePointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundIndeterminatePointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushIndeterminatePointerOver}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -1029,10 +1029,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundIndeterminatePressed}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundIndeterminatePressed}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushIndeterminatePressed}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
@@ -1059,10 +1059,10 @@
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxForegroundIndeterminateDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="Background">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBackgroundIndeterminateDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
-										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="BorderBrush">
+										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="BaseGrid" Storyboard.TargetProperty="BorderBrush">
 											<DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource CheckBoxBorderBrushIndeterminateDisabled}" />
 										</ObjectAnimationUsingKeyFrames>
 										<ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalRectangle" Storyboard.TargetProperty="Stroke">
